@@ -1,0 +1,15 @@
+
+  
+  #main{
+    height: 440vh;
+  }
+  .video {
+position: fixed;
+
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+  
+  

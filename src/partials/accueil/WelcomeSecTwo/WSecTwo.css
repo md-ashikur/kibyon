@@ -1,0 +1,25 @@
+
+
+
+
+
+/* style for cursor */
+.cursor {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 50%;
+  top: calc(var(--y) - 40px);
+  left: calc(var(--x) - 40px);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition: background-color 0.3s ease-out;
+}
+
+
+/* set cursor position using custom properties */
+:root {
+  --x: 0;
+  --y: 0;
+}

@@ -1,49 +1,22 @@
-import { ScrollControls } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
-import React, { useMemo } from 'react';
-import { Experience } from '../../components/aboutComponents/Experience';
-import { Overlay } from '../../components/aboutComponents/Overlay';
-import { EffectComposer, Noise } from '@react-three/postprocessing';
-import { usePlay } from '../../contexts/Play';
-import "./About.css"
-
+import React from 'react';
+import AboutBody from '../../partials/about/AboutBody';
+import Header from "../../partials/Header";
+import Footer from "../../components/Footer/Footer";
 
 const About = () => {
-  const { play, end } = usePlay();
-
-    const effects = useMemo(
-      () => (
-        <EffectComposer>
-          <Noise opacity={0.0} />
-        </EffectComposer>
-      ),
-      []
-    );
-  
     return (
-      <div className='overflow-hidden'>
-        <Canvas className='can' >
-          <color attach="background" args={["#ececec"]} />
-          <ScrollControls
-            pages={play && !end ? 20 : 0}
-            damping={0.5}
-            style={{
-              top: "10px",
-              left: "0px",
-              bottom: "10px",
-              right: "10px",
-              width: "auto",
-              height: "auto",
-              animation: "fadeIn 2.4s ease-in-out 1.2s forwards",
-              opacity: 0,
-            }}
-          >
-            <Experience />
-          </ScrollControls>
-          {effects}
-        </Canvas>
-        <Overlay />
+        <div className="flex h-screen overflow-hidden">
+    
+        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+          <Header  />
+          <main>
+            <div className="">
+             <AboutBody/>
+            </div>
+          </main>
+          <Footer/>
         </div>
+      </div>
     );
 };
 

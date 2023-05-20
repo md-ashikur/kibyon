@@ -4,14 +4,19 @@ import {
   Route,
   useLocation
 } from 'react-router-dom';
-
 import './css/style.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-
+import Contact from "./pages/Contact/Contact";
+import LegalPage from "./pages/LegalPage/LegalPage";
 import About from './pages/about/About';
+import Footer from './components/Footer/Footer';
+import Offer from './pages/OfferPage/Offer';
+import Accueil from './pages/Accueil/Accueil';
 
 function App() {
-
+  Aos.init();
   const location = useLocation();
 
   useEffect(() => {
@@ -24,10 +29,15 @@ function App() {
     <>
       <Routes>
        
-        <Route exact path="/" element={<About/>} />
+      <Route path="/" element={<Accueil/>} />
+        <Route path="/offer" element={<Offer />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/legal" element={<LegalPage />} />
        
        
        
+        <Route path="/legal" element={<Footer/>} />
       </Routes>
     </>
   );
