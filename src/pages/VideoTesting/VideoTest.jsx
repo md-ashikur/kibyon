@@ -7,14 +7,7 @@ import mvideo from "../../Videos/WP - Section 3 -Services 5 étoiles VF-03_2023.
 import { useState } from "react";
 
 
-
-
 gsap.registerPlugin(ScrollTrigger);
-
-
-
-
-
 
 
 const VideoTest = () => {
@@ -27,7 +20,7 @@ const VideoTest = () => {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: "video",
-        start: "top+=400% bottom",
+        start: "top+=10% bottom",
         end: "bottom+=600% bottom",
         scrub: true,
         
@@ -56,17 +49,7 @@ const VideoTest = () => {
 
   return (
     <div id="main">
-      <div className="bg-red-400 h-screen w-full z-10  relative">df</div>
-      <div className="bg-green-400 h-screen w-full z-10  relative">
      
-      </div>
-
-
-
-
-
-
-      
       <div className="relative">
       <video
         class="video"

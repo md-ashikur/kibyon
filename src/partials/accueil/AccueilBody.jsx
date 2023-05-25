@@ -21,13 +21,13 @@ const AccueilBody = () => {
           <div className="absolute top-20 ">
             <Wheader />
           </div>
-          <WsecOne />
+        
         </div>
-  
+      <section className="absolute top-20">  <WsecOne /></section>
         <section className="relative z-20">
-          <WSecTwo />
+          {/* <WSecTwo /> */}
         </section>
-  
+
         <WSecThree />
       </div>
     );

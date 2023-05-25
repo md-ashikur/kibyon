@@ -16,9 +16,7 @@ export const Overlay = () => {
         <div className={`intro ${play ? "intro--disappear" : ""}`}>
           <h1 className="logo">
            KIBYON
-            {/* <div className="spinner">
-              <div className="spinner__image" />
-            </div> */}
+            
           </h1>
           <p className="intro__scroll">Scroll to begin the journey</p>
           <button

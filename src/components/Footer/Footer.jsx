@@ -21,11 +21,11 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="lg:px-4">
+        <div className="lg:px-4 flex flex-col">
           <span className="font-semibold text-xl mb-5 text-secondary">
             Contactez-nous
           </span>
-          <p className="">
+          <p className="text-justify">
             Rencontrons-nous, à Paris ou Orléans où nous sommes principalement
             basés, et dans toute la france si besoin
           </p>
@@ -41,7 +41,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="">
+        <div className="flex flex-col">
           <span className="font-semibold mb-5 text-xl text-secondary">
             Navigation
           </span>
