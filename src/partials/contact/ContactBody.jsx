@@ -77,7 +77,7 @@ const ContactBody = () => {
         {/* ------------------------
         contact form side
         ------------------- */}
-        <div className="bg-base-100 p-10 rounded-lg  " data-aos="fade-left" data-aos-duration="1500">
+        <div className="bg-base-100 p-10 rounded-lg  " data-aos-anchor-placement="top-bottom" data-aos="fade-left" data-aos-duration="1500">
           <h2 className="text-3xl font-semibold pb-8" >Envoyer un message</h2>
 
           <form
