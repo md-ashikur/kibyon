@@ -30,36 +30,10 @@ export function Airplane(props) {
       <group  scale={2} ref={helix} name="Studio_limbo_3_point_lighting_2x2x2">
        
         <group name="Jet_03" position={[3.4, -5.76, -51.38]}>
-          <mesh
-            name="Jet_Flame_mesh_Icosphere"
-            geometry={nodes.Jet_Flame_mesh_Icosphere.geometry}
-            material={
-              new MeshBasicMaterial({
-                color: new Color("gold"),
-                side: DoubleSide,
-                emissive: new Color("gold"),
-                emissiveIntensity: 1,
-              })
-            }
-            position={[-6.3, 5.95, 51.52]}
-            scale={0.02}
-          />
+         
         </group>
         <group name="Jet_03002" position={[3.4, -5.76, -51.21]}>
-          <mesh
-            name="Jet_Flame_mesh_Icosphere001"
-            geometry={nodes.Jet_Flame_mesh_Icosphere001.geometry}
-            material={
-              new MeshBasicMaterial({
-                color: new Color("gold"),
-                side: DoubleSide,
-                emissive: new Color("gold"),
-                emissiveIntensity: 1,
-              })
-            }
-            position={[-6.31, 5.95, 51.49]}
-            scale={0.02}
-          />
+         
         </group>
         <mesh
           name="Plane_With_Raised_Wings_Plane001"

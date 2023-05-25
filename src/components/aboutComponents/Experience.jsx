@@ -50,48 +50,67 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z
         ),
-        title: "Pourquoi auriez-vous besoin de conseil en stratégie d’entreprise ?",
-        subtitle: `Chaque entreprise devrait régulièrement faire un point à 360° sur ses activités, sa situation passée et future. Il est primordial de prendre du temps pour revoir régulièrement votre stratégie globale à court moyen et long terme et identifier les axes d’améliorations. `,
+        title: `
+Pourquoi auriez-vous 
+besoin de conseil en 
+stratégie d’entreprise ?`,
+        subtitle: `
+Chaque entreprise devrait régulièrement faire un point à 360° 
+sur ses activités, sa situation passée et future. Il est primordial 
+de prendre du temps pour revoir régulièrement votre stratégie 
+globale à court moyen et long terme et identifier les axes 
+d’améliorations. `,
       },
       {
         cameraRailDist: 1.5,
         position: new Vector3(
-          curvePoints[2].x - 50,
-          curvePoints[2].y + 1,
+          curvePoints[2].x - 49,
+          curvePoints[2].y + 1.5,
           curvePoints[2].z + 140,
         ),
         title: "",
         subtitle: `
-        L’idée est de vous offrir des compétences spécifiques au service
-        de vos idées, couplées à votre savoir-faire métier. Le but est d’apporter
-        une vision complète pour identifier ensemble votre besoin pour des missions
-        ponctuelles ou un éclairage plus global pour un accompagnement régulier.
+        L’idée est de vous offrir des compétences spécifiques
+        au service de vos idées, couplées à votre savoir-faire
+        métier. Le but est d’apporter une vision complète pour
+        identifier ensemble votre besoin pour des missions 
+        ponctuelles ou un éclairage plus global pour un
+        accompagnement régulier.
            
-        Il est souvent difficile pour les plus petites entreprises d’avoir accès à ce 
-        type d’accompagnement, c’est pourquoi nous mettons tout en œuvre pour proposer 
-        du conseil abordable sur mesure, qui fait sens et qui place vos intérêts en priorité. 
+        Il  est  souvent  difficile pour les  plus  petites  entreprises  
+        d’avoir accès à ce type d’accompagnement, c’est pourquoi  
+        nous mettons tout  en  œuvre  pour  proposer  du  conseil 
+        abordable sur mesure, qui fait sens et qui place vos intérêts 
+        en priorité. 
         
-        Que vous soyez à l’aise avec tout ce qui compose la vie et la gestion d’une entreprise 
-        ou non, un regard extérieur pour challenger votre quotidien et vous permettre de vous 
-        poser les bonnes questions en vous aidant à y répondre est capital. Pouvoir faire le point 
-        sur votre activité et appréhender le futur afin de choisir les orientations à suivre en 
-        fonction de vos besoins, objectifs et de la situation de votre entreprise.
+        Que vous soyez à l’aise avec tout ce qui compose la vie 
+        et la gestion d’une entreprise ou non, un regard extérieur 
+        pour challenger votre quotidien et vous permettre de vous 
+        poser les bonnes questions en vous aidant à y répondre est 
+        capital. Pouvoir faire le point sur votre activité et appréhender 
+        le futur afin de choisir les orientations à suivre en fonction de 
+        vos besoins, objectifs et de la situation de votre entreprise.
         `,
       },
       {
         cameraRailDist: 1.5,
         position: new Vector3(
-          curvePoints[2].x ,
-          curvePoints[2].y,
+          curvePoints[2].x - 1,
+          curvePoints[2].y + 0.2,
           curvePoints[2].z ,
         ),
-        title: "Pourquoi choisir Kibyon ?",
+        title: `
+Pourquoi choisir 
+Kibyon ?`,
         subtitle: `
-Notre cabinet, constitué d’une équipe jeune et créative a pour but de vous 
-accompagner tout au long de votre parcours, selon vos envies, vos besoins et 
-avec la plus grande pédagogie possible. Nous avons à cœur de proposer des 
-services adaptés à votre situation personnelle et à celle de votre entreprise, 
-tout au long de sa vie : de sa création à sa cession. 
+Notre cabinet, constitué d’une équipe jeune et 
+créative a pour but de vous accompagner tout 
+au long de votre parcours, selon vos envies, vos 
+besoins et avec la plus grande pédagogie possible. 
+Nous avons à cœur de proposer des services  
+adaptés à votre situation personnelle et à celle de 
+votre entreprise, tout au long de sa vie : de sa 
+création à sa cession. 
 
         `,
       },
@@ -104,9 +123,21 @@ tout au long de sa vie : de sa création à sa cession.
         ),
         title: "",
         subtitle: `
-Nous sommes animés par vos projets et la vie de votre entreprise, vous pouvez nous consulter n’importe quand, au-delà de l’aide à la création, nous serons présents en cas de difficultés (internes ou externes), d’interrogations et nous faisons aussi le lien entre les différents acteurs avec qui vous serez amené à traiter pour s’assurer que vos intérêts soient toujours une priorité. 
+Nous sommes animés par vos projets et la vie de votre  
+entreprise, vous pouvez nous consulter n’importe quand, 
+au-delà de l’aide à la création, nous  serons  présents en 
+cas de difficultés (internes ou externes), d’interrogations 
+et nous faisons aussi le lien entre  les  différents  acteurs 
+avec qui vous serez amené à traiter pour s’assurer que vos 
+intérêts soient toujours une priorité. 
         
-Nous avons décidé de faire du conseil autrement autant dans la méthode de conseil que dans la gestion du cabinet, en mettant la recherche académique et l’innovation au service du plus grand nombre, en proposant un conseil adaptable au plus près de ceux qui en ont besoin et en permettant une grande flexibilité dans nos offres mais aussi dans les possibilités de paiement.
+Nous avons décidé de faire du conseil autrement autant 
+dans la méthode de conseil que dans la gestion du cabinet, 
+en mettant la recherche académique et l’innovation au service 
+du plus grand nombre, en proposant un conseil adaptable au 
+plus près de ceux qui en ont besoin et en permettant une 
+grande flexibilité dans nos offres mais aussi dans les 
+possibilités de paiement.
         `,
       },
       {
@@ -116,21 +147,44 @@ Nous avons décidé de faire du conseil autrement autant dans la méthode de con
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Geoffrey THUILLIER – Fondateur de Kibyon ",
-        subtitle: `Après avoir été au contact de diverses entreprises, entrepreneurs et institutions, j’ai observé que bon nombre d’acteurs se sentaient parfois démunis face aux difficultés et aux interrogations qu’ils pouvaient rencontrer. J’ai souhaité créer un cabinet qui répond aux préoccupations du plus grand nombre, en installant le monde du conseil dans le 21éme siècle pour le faire évoluer au rythme de la société et de ses nouveaux défis. Il me parait essentiels de tirer profit des nouvelles méthodes d’analyses, des avancées académiques et de proposer des solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre. `,
+        title: `
+Geoffrey THUILLIER – 
+Fondateur  de  Kibyon `,
+        subtitle: `Après avoir été au contact de diverses entreprises, entrepreneurs 
+et institutions, j’ai observé que bon nombre d’acteurs se sentaient 
+parfois démunis face aux difficultés et aux interrogations qu’ils 
+pouvaient rencontrer. J’ai souhaité créer un cabinet qui répond aux 
+préoccupations du plus grand nombre, en installant le monde du conseil 
+dans le 21éme siècle pour le faire évoluer au rythme de la société et de 
+ses nouveaux défis. Il me parait essentiels de tirer profit des nouvelles 
+méthodes d’analyses, des avancées académiques et de proposer des 
+solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre. `,
       },
      
       {
         cameraRailDist: 1.5,
         position: new Vector3(
-          curvePoints[4].x - 2,
+          curvePoints[4].x - 1,
           curvePoints[4].y + 1,
           curvePoints[4].z 
         ),
         title: "",
-        subtitle: `Pour parfaire nos analyses, nous devons aujourd’hui utiliser les nouvelles technologies à notre disposition et ainsi proposer un conseil plus performant, plus flexible et plus accessible en privilégiant la pédagogie et la bienveillance. L’idée est de vous accompagner tout au long de la vie de votre entreprise, tout en vous rendant autonome, pour ne laisser aucune place au hasard en prenant en compte tous les aspects de votre entreprise et de son environnement. Ainsi, vous serez en mesure de vous adapter et d’anticiper en permanence pour atteindre les objectifs que nous nous sommes fixé ensemble et relever les challenges qui se présenteront.
+        subtitle: `
+        Pour parfaire nos analyses, nous devons aujourd’hui utiliser les 
+        nouvelles technologies à notre disposition et ainsi proposer un 
+        conseil plus performant, plus flexible et plus accessible en 
+        privilégiant la pédagogie et la bienveillance. L’idée est de vous 
+        accompagner tout au long de la vie de votre entreprise, tout en 
+        vous rendant autonome, pour ne laisser aucune place au hasard 
+        en prenant en compte tous les aspects de votre entreprise et de 
+        son environnement. Ainsi, vous serez en mesure de vous adapter 
+        et d’anticiper en permanence pour atteindre les objectifs que nous 
+        nous sommes fixé ensemble et relever les challenges qui se présenteront.
         
-Merci pour votre soutien et la confiance que vous nous témoignez au quotidien pour mener vos projets et vous accompagner. Nous permettant ainsi de distiller notre vision et de faire évoluer ce secteur au bénéfice des entrepreneurs et dirigeants d’entreprises.
+        Merci pour votre soutien et la confiance que vous nous témoignez 
+        au quotidien pour mener vos projets et vous accompagner. Nous 
+        permettant ainsi de distiller notre vision et de faire évoluer ce secteur 
+        au bénéfice des entrepreneurs et dirigeants d’entreprises.
         `,
       },
     ];
