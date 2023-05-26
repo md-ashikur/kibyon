@@ -7,10 +7,13 @@ import { Euler, Group, Vector3 } from "three";
 import { usePlay } from "../../contexts/Play";
 import { fadeOnBeforeCompile } from "../../utils/fadeMaterial";
 import { Airplane } from "./Plane";
+import { Airplane2 } from "./Airplane";
+
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Speed } from "./Speed";
 import { TextSection } from "./TextSection";
+import kg from "../../images/group-avatar-04.png";
 
 const LINE_NB_POINTS = 1000;
 const CURVE_DISTANCE = 250;
@@ -48,7 +51,7 @@ export const Experience = () => {
         position: new Vector3(
           curvePoints[1].x - 3,
           curvePoints[1].y,
-          curvePoints[1].z
+          curvePoints[1].z,
         ),
         title: `
 Pourquoi auriez-vous 
@@ -61,6 +64,7 @@ de prendre du temps pour revoir régulièrement votre stratégie
 globale à court moyen et long terme et identifier les axes 
 d’améliorations. `,
       },
+      
       {
         cameraRailDist: 1.5,
         position: new Vector3(
@@ -147,6 +151,7 @@ possibilités de paiement.
           curvePoints[3].y,
           curvePoints[3].z
         ),
+       
         title: `
 Geoffrey THUILLIER – 
 Fondateur  de  Kibyon `,
@@ -189,6 +194,7 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
       },
     ];
   }, []);
+ 
 
   const clouds = useMemo(
     () => [
@@ -544,12 +550,12 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
     tl.current.to(backgroundColors.current, {
       duration: 1,
       colorA: "#6f35cc",
-      colorB: "#ffad30",
+      colorB: "#f5bccf",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
       colorA: "#424242",
-      colorB: "#ffcc00",
+      colorB: "#55ab8f",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
@@ -623,6 +629,8 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
               />
             </Float>
           </group>
+
+         
         </group>
         {/* TEXT */}
         {textSections.map((textSection, index) => (
@@ -652,10 +660,20 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
           </mesh>
         </group>
 
+        {/* avatar */}
+        <group position-z={-750} position-x={-105}>
+          <mesh>
+            
+             <Airplane2/>
+            
+          </mesh>
+        </group>
+
         {/* CLOUDS */}
         {clouds.map((cloud, index) => (
           <Cloud sceneOpacity={sceneOpacity} {...cloud} key={index} />
         ))}
+        
       </>
     ),
     []

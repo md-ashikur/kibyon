@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 
 const HELIX_SPEED = 6;
 
-export function Airplane(props) {
+export function Airplane2(props) {
   const { nodes, materials } = useGLTF("./models/airplane/model.glb");
 
   const helix = useRef();
@@ -18,7 +18,7 @@ export function Airplane(props) {
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.PUSHILIN_Plane_Circle000.geometry}>
-        <meshStandardMaterial color="white" />
+        <meshStandardMaterial />
       </mesh>
       <mesh
         ref={helix}
@@ -26,7 +26,7 @@ export function Airplane(props) {
         material={materials.plane}
         position={[1.09, 0.23, 0]}
       >
-        <meshStandardMaterial color="white" />
+        <meshStandardMaterial />
       </mesh>
     </group>
   );
