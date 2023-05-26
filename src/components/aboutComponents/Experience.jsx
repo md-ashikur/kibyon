@@ -7,13 +7,12 @@ import { Euler, Group, Vector3 } from "three";
 import { usePlay } from "../../contexts/Play";
 import { fadeOnBeforeCompile } from "../../utils/fadeMaterial";
 import { Airplane } from "./Plane";
-import { Airplane2 } from "./Airplane";
-
+import { Avatarlean } from "./Avatarlean";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Speed } from "./Speed";
 import { TextSection } from "./TextSection";
-import kg from "../../images/group-avatar-04.png";
+
 
 const LINE_NB_POINTS = 1000;
 const CURVE_DISTANCE = 250;
@@ -66,20 +65,32 @@ d’améliorations. `,
       },
       
       {
-        cameraRailDist: 1.5,
+        cameraRailDist: -1,
         position: new Vector3(
-          curvePoints[2].x - 49,
-          curvePoints[2].y + 1.5,
-          curvePoints[2].z + 140,
+          curvePoints[1].x +11,
+          curvePoints[1].y + 0.5,
+          curvePoints[1].z - 40,
         ),
-        title: "",
+        title: ``,
         subtitle: `
         L’idée est de vous offrir des compétences spécifiques
         au service de vos idées, couplées à votre savoir-faire
         métier. Le but est d’apporter une vision complète pour
         identifier ensemble votre besoin pour des missions 
         ponctuelles ou un éclairage plus global pour un
-        accompagnement régulier.
+        accompagnement régulier. `,
+      },
+      
+      {
+        cameraRailDist: 0,
+        position: new Vector3(
+          curvePoints[1].x + 46,
+          curvePoints[1].y + 0.6,
+          curvePoints[1].z -100,
+        ),
+        title: "",
+        subtitle: `
+       
            
         Il  est  souvent  difficile pour les  plus  petites  entreprises  
         d’avoir accès à ce type d’accompagnement, c’est pourquoi  
@@ -87,6 +98,19 @@ d’améliorations. `,
         abordable sur mesure, qui fait sens et qui place vos intérêts 
         en priorité. 
         
+        `,
+      },
+
+      {
+        cameraRailDist: 0,
+        position: new Vector3(
+          curvePoints[2].x - 25,
+          curvePoints[2].y+ 1,
+          curvePoints[2].z + 100,
+        ),
+        title: "",
+        subtitle: `
+       
         Que vous soyez à l’aise avec tout ce qui compose la vie 
         et la gestion d’une entreprise ou non, un regard extérieur 
         pour challenger votre quotidien et vous permettre de vous 
@@ -97,9 +121,9 @@ d’améliorations. `,
         `,
       },
       {
-        cameraRailDist: 1.5,
+        cameraRailDist: 1,
         position: new Vector3(
-          curvePoints[2].x - 1,
+          curvePoints[2].x ,
           curvePoints[2].y + 0.2,
           curvePoints[2].z ,
         ),
@@ -119,9 +143,9 @@ création à sa cession.
         `,
       },
       {
-        cameraRailDist: -2,
+        cameraRailDist: 0,
         position: new Vector3(
-          curvePoints[2].x - 15,
+          curvePoints[2].x - 13,
           curvePoints[2].y + 1,
           curvePoints[2].z - 30,
         ),
@@ -135,6 +159,17 @@ et nous faisons aussi le lien entre  les  différents  acteurs
 avec qui vous serez amené à traiter pour s’assurer que vos 
 intérêts soient toujours une priorité. 
         
+        `,
+      },
+      {
+        cameraRailDist: -1,
+        position: new Vector3(
+          curvePoints[3].x +153,
+          curvePoints[3].y + 1,
+          curvePoints[3].z +180,
+        ),
+        title: "",
+        subtitle: `
 Nous avons décidé de faire du conseil autrement autant 
 dans la méthode de conseil que dans la gestion du cabinet, 
 en mettant la recherche académique et l’innovation au service 
@@ -555,12 +590,17 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
     tl.current.to(backgroundColors.current, {
       duration: 1,
       colorA: "#424242",
-      colorB: "#55ab8f",
+      colorB: "#5ca790b0",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#81318b",
-      colorB: "#55ab8f",
+      colorA: "#6f35cc",
+      colorB: "#7cc7b1c9",
+    });
+    tl.current.to(backgroundColors.current, {
+      duration: 1,
+      colorA: "#3535cc",
+    colorB: "#abaadd",
     });
 
     tl.current.pause();
@@ -661,10 +701,10 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
         </group>
 
         {/* avatar */}
-        <group position-z={-750} position-x={-105}>
+        <group position-z={-750} position-x={-104.5} position-y={-1}>
           <mesh>
             
-             <Airplane2/>
+             <Avatarlean/>
             
           </mesh>
         </group>
