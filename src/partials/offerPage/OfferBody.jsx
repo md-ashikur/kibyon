@@ -4,15 +4,18 @@ import OfferSecTwo from './OfferSecTwo';
 import OfferSecThree from './OfferSecThree';
 import OfferSceFour from './OfferSceFour';
 import OfferSecFive from './OfferSecFive';
+import OfferHeader from './OfferHeader';
 
 const OfferBody = () => {
     return (
         <div>
-            <OfferPage/>
+             <OfferPage/>
+            <OfferHeader/>
+           
             {/* <OfferSecTwo/> */}
-            <OfferSecThree/>
-            <OfferSceFour/>
-            <OfferSecFive/>
+            {/* <OfferSecThree/> */}
+            {/* <OfferSceFour/> */}
+            {/* <OfferSecFive/> */}
         </div>
     );
 };

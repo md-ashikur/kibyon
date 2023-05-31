@@ -589,13 +589,13 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#424242",
-      colorB: "#5ca790b0",
+      colorA: "#6f35cc",
+      colorB: "#f5bccf",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,
       colorA: "#6f35cc",
-      colorB: "#7cc7b1c9",
+      colorB: "#f5bccf",
     });
     tl.current.to(backgroundColors.current, {
       duration: 1,

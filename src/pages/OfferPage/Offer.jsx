@@ -10,9 +10,9 @@ const Offer = () => {
         <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
           <Header  />
           <main>
-          <div className="h-screen text-3xl text-center mt-10">
-       <h1>Under Construction. Available soon</h1>
-        </div>
+        
+       <OfferBody/>
+        
           </main>
           <Footer/>
         </div>
