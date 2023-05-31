@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.js";
 import img1 from "../../img/Offre unique/Image 1/Image 1.png";
 import img2 from "../../img/Offre unique/Image 2/Image 2.png";
-import img3 from "../../img/Offre unique/Image 3/Image 3.png";
-import img4 from "../../img/Offre unique/Image 4/Image 4.png";
-import img5 from "../../img/Offre unique/Image 5/Image 5.png";
-import img6 from "../../img/Offre unique/Image 6/Image 6.png";
+import img3 from "../../img/Offre unique/Image 3/image 3.png";
+import img4 from "../../img/Offre unique/Image 4/image 4.png";
+import img5 from "../../img/Offre unique/Image 5/image 5.png";
+import img6 from "../../img/Offre unique/Image 6/image 6.png";
 import img7 from "../../img/Offre unique/Image 7/image 7 (2).png";
 
 const OfferHeader = () => {
