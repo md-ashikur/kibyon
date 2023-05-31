@@ -63,7 +63,7 @@ const OfferHeader = () => {
   }, []);
   return (
     <div className="slider-container grid lg:grid-cols-5 text-white">
-      <div className="flex text-center items-center lg:col-span-2 px-8">
+      <div className="flex text-center items-center justify-end lg:col-span-2 px-8">
         <div>
           <h1 className="text-5xl font-bold my-5">Notre méthode</h1>
           <p>
@@ -79,12 +79,12 @@ const OfferHeader = () => {
         <div id="your-slider" className="slider">
           <div
             className="slide"
-            data-color="linear-gradient(to right, #F44336, #FF9800)"
+            data-color="linear-gradient(to top, #030a12, #183652)"
           >
             <div>
               <h3 className="text-xl font-bold">Étape 1 </h3>
               <img src={img1} alt="" className="" />
-              <p className="bg-[#040c1b] rounded-b-lg p-2">
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
               1 échange téléphonique pour bien comprendre votre projet 
               </p>
             </div>
@@ -93,62 +93,62 @@ const OfferHeader = () => {
 
           <div
             className="slide"
-            data-color="linear-gradient(to right, #7E57C2, #2196F3)"
+            data-color="linear-gradient(to top, #7E57C2, #2196F3)"
           >
             <div>
               <h3 className="text-xl font-bold">Étape 2 </h3>
               <img src={img2} alt="" className="" />
-              <p className="bg-[#040c1b] rounded-b-lg p-2">Collecte des éléments disponibles du projet et collaboration pour obtenir les éléments manquants </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Collecte des éléments disponibles du projet et collaboration pour obtenir les éléments manquants </p>
             </div>
           </div>
           <div
             className="slide"
-            data-color="linear-gradient(to right, #009688, #4CAF50)"
+            data-color="linear-gradient(to top, #009688, #4CAF50)"
           >
             <div>
               <h3 className="text-xl font-bold">Étape 3 </h3>
               <img src={img3} alt="" className="" />
-              <p className="bg-[#040c1b] rounded-b-lg p-2">1 proposition commerciale adaptée à votre besoin </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">1 proposition commerciale adaptée à votre besoin </p>
             </div>
           </div>
           <div
             className="slide"
-            data-color="linear-gradient(to right, #e70ac2, #9C27B0)"
+            data-color="linear-gradient(to top, #182e46, #2b4560)"
           >
             <div>
               <h3 className="text-xl font-bold">Étape 4 </h3>
               <img src={img4} alt="" className="" />
-              <p className="bg-[#040c1b] rounded-b-lg p-2">Entretiens de travail de plusieurs heures pour structurer le projet et définir les lignes directrices </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Entretiens de travail de plusieurs heures pour structurer le projet et définir les lignes directrices </p>
             </div>
           </div>
           <div
             className="slide"
-            data-color="linear-gradient(to right, #1c43b1, #3F51B5)"
+            data-color="linear-gradient(to top, #060f1f, #0c5463)"
           >
             <div>
               <h3 className="text-xl font-bold">Étape 5 </h3>
               <img src={img5} alt="" className="" />
-              <p className="bg-[#040c1b] rounded-b-lg p-2">Plusieurs échanges complémentaires au fil de la mission pour préciser le projet et réfléchir ensemble aux meilleurs choix pour vous </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Plusieurs échanges complémentaires au fil de la mission pour préciser le projet et réfléchir ensemble aux meilleurs choix pour vous </p>
             </div>
           </div>
           <div
             className="slide"
-            data-color="linear-gradient(to right, #1c43b1, #3F51B5)"
+            data-color="linear-gradient(to top, #1c43b1, #adc7d3)"
           >
             <div>
               <h3 className="text-xl font-bold">Étape 6 </h3>
               <img src={img6} alt="" className="" />
-              <p className="bg-[#040c1b] rounded-b-lg p-2">Livrable du projet en pdf et Powerpoint avec accès au fichier source (pour la partie financière notamment) </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Livrable du projet en pdf et Powerpoint avec accès au fichier source (pour la partie financière notamment) </p>
             </div>
           </div>
           <div
             className="slide"
-            data-color="linear-gradient(to right, #1c43b1, #3F51B5)"
+            data-color="linear-gradient(to top, #151926, #53aab1)"
           >
             <div>
               <h3 className="text-xl font-bold">Étape 7 </h3>
               <img src={img7} alt="" className="" />
-              <p className="bg-[#040c1b] rounded-b-lg p-2">Présentation du projet et collaboration avec vous pour assurer une prise en main complète, favorisant ainsi votre totale indépendance et autonomie </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Présentation du projet et collaboration avec vous pour assurer une prise en main complète, favorisant ainsi votre totale indépendance et autonomie </p>
             </div>
           </div>
         </div>

@@ -7,10 +7,7 @@ import card4 from "../../img/Introduction/1st Cards option 2- Market research.pn
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import OfferSecTwo from "./OfferSecTwo";
-import OfferSecThree from "./OfferSecThree";
-import OfferSceFour from "./OfferSceFour";
-import OfferSecFive from "./OfferSecFive";
+
 
 
 
@@ -51,7 +48,7 @@ const OfferPage = () => {
         <div className="grid lg:grid-rows-2  grid-rows-4 grid-flow-col gap-5 justify-center pt-5 lg:pt-0">
           {/* ================card1======================== */}
          <a href="#market_study">
-         <div className="relative cardBody" data-aos="flip-up" >
+         <div className="relative cardBody" data-aos="flip-up" data-aos-anchor-placement="top-bottom">
             <h2 className="absolute top-5 left-10 z-10 cardText">
               Étude de marché
             </h2>
@@ -83,7 +80,7 @@ const OfferPage = () => {
 
           {/* ====================card3=========== */}
           <a href="#Business_plan">
-          <div className="relative cardBody" data-aos="flip-up"  data-aos-duration="1200">
+          <div className="relative cardBody" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
             <h2 className="absolute top-5 left-14 z-10 cardText">
               Business plan
             </h2>
@@ -116,7 +113,7 @@ const OfferPage = () => {
 
           {/* ==========================card2============ */}
          <a href="#financial_forecast">
-         <div className="relative cardBody" data-aos="flip-up"  data-aos-duration="1400">
+         <div className="relative cardBody" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1400">
             <h2 className="absolute top-5 left-7 z-10 cardText">
               Prévisionel financier
             </h2>
@@ -149,7 +146,7 @@ const OfferPage = () => {
          </a>
           {/* ===================card4================== */}
           <a href="#Unique_offer">
-          <div className="relative cardBody" data-aos="flip-up"  data-aos-duration="1600">
+          <div className="relative cardBody" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
             <h2 className="absolute top-5 left-14 z-10 cardText">
               Offre unique
             </h2>
