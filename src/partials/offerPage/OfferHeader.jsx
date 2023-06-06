@@ -1,9 +1,18 @@
 import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+
+// Import Swiper styles
+
+
 import "./OfferHeader.css";
-import $ from "jquery";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick.js";
-import img1 from "../../img/Offre unique/Image 1/Image 1.png";
+import img1 from "../../img/Offre unique/Image 1/image 1.jpg";
 import img2 from "../../img/Offre unique/Image 2/Image 2.png";
 import img3 from "../../img/Offre unique/Image 3/image 3.png";
 import img4 from "../../img/Offre unique/Image 4/image 4.png";
@@ -12,147 +21,120 @@ import img6 from "../../img/Offre unique/Image 6/image 6.png";
 import img7 from "../../img/Offre unique/Image 7/image 7 (2).png";
 
 const OfferHeader = () => {
-  useEffect(() => {
-    const setColor = (currentSlide) => {
-      const slides = document.getElementsByClassName("slide");
-      const sliderContainer =
-        document.getElementsByClassName("slider-container")[0];
+ 
 
-      const activeSlide = slides[currentSlide];
-      const color = activeSlide.dataset.color;
-
-      sliderContainer.style.background = color;
-    };
-
-    const initializeSlider = () => {
-      const $yourSlider = $("#your-slider");
-
-      $yourSlider.on("init", (event, slick) => {
-        setColor(slick.currentSlide);
-      });
-
-      $yourSlider.slick({
-        fade: true,
-        infinite: true, // Disable infinite loop
-        initialSlide: 0, // Set initial slide to 0 (first slide)
-      });
-
-      $yourSlider.on(
-        "beforeChange",
-        (event, slick, currentSlide, nextSlide) => {
-          setColor(nextSlide);
-        }
-      );
-    };
-
-    initializeSlider();
-
-    // const autoSlide = setInterval(() => {
-    //   const $yourSlider = $("#your-slider");
-    //   const currentSlide = $yourSlider.slick("slickCurrentSlide");
-    //   const slideCount = $yourSlider.slick("getSlick").slideCount;
-    //   const nextSlide = (currentSlide + 1) % slideCount;
-
-    //   $yourSlider.slick("slickGoTo", nextSlide);
-    // }, 5000);
-
-    return () => {
-      $("#your-slider").slick("unslick");
-      // clearInterval(autoSlide);
-    };
-  }, []);
   return (
-    <div className="slider-container grid lg:grid-cols-5 text-white">
-      <div className="flex text-center items-center justify-end lg:col-span-2 px-8">
+    <div className="h-screen bg-black px-20 text-center">
+   
         <div>
-          <h1 className="text-5xl font-bold my-5">Notre méthode</h1>
-          <p>
-            Voici un aperçu de notre processus de missions. Cependant, afin de
-            vous proposer une offre sur mesure, nous adaptons nos méthodes à
-            votre projet, à votre façon de travailler et aux aléas éventuels.
-            que nous pourrions rencontrer.
-          </p>
+          <h1 className="text-3xl text-center pt-10 font-bold text-white">Notre méthode</h1>
+         
         </div>
-      </div>
-
-      <div className="lg:col-span-3 flex items-center">
-        <div id="your-slider" className="slider">
-          <div
-            className="slide"
-            data-color="linear-gradient(to top, #030a12, #183652)"
-          >
-            <div>
+    
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView="auto"
+        spaceBetween={150}
+        coverflowEffect={{
+          rotate: 10,
+          stretch: 0,
+          depth: 100,
+          modifier: 3,
+        }}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
+      >
+        <SwiperSlide>
+        <div className="bg-white">
               <h3 className="text-xl font-bold">Étape 1 </h3>
               <img src={img1} alt="" className="" />
               <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
               1 échange téléphonique pour bien comprendre votre projet 
               </p>
             </div>
-          </div>
-
-
-          <div
-            className="slide"
-            data-color="linear-gradient(to top, #7E57C2, #2196F3)"
-          >
-            <div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="bg-white">
               <h3 className="text-xl font-bold">Étape 2 </h3>
               <img src={img2} alt="" className="" />
-              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Collecte des éléments disponibles du projet et collaboration pour obtenir les éléments manquants </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
+              1 échange téléphonique pour bien comprendre votre projet 
+              </p>
             </div>
-          </div>
-          <div
-            className="slide"
-            data-color="linear-gradient(to top, #009688, #4CAF50)"
-          >
-            <div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="bg-white">
               <h3 className="text-xl font-bold">Étape 3 </h3>
               <img src={img3} alt="" className="" />
-              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">1 proposition commerciale adaptée à votre besoin </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
+              1 échange téléphonique pour bien comprendre votre projet 
+              </p>
             </div>
-          </div>
-          <div
-            className="slide"
-            data-color="linear-gradient(to top, #182e46, #2b4560)"
-          >
-            <div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="bg-white">
               <h3 className="text-xl font-bold">Étape 4 </h3>
               <img src={img4} alt="" className="" />
-              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Entretiens de travail de plusieurs heures pour structurer le projet et définir les lignes directrices </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
+              1 échange téléphonique pour bien comprendre votre projet 
+              </p>
             </div>
-          </div>
-          <div
-            className="slide"
-            data-color="linear-gradient(to top, #060f1f, #0c5463)"
-          >
-            <div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="bg-white">
               <h3 className="text-xl font-bold">Étape 5 </h3>
               <img src={img5} alt="" className="" />
-              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Plusieurs échanges complémentaires au fil de la mission pour préciser le projet et réfléchir ensemble aux meilleurs choix pour vous </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
+              1 échange téléphonique pour bien comprendre votre projet 
+              </p>
             </div>
-          </div>
-          <div
-            className="slide"
-            data-color="linear-gradient(to top, #1c43b1, #adc7d3)"
-          >
-            <div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="bg-white">
               <h3 className="text-xl font-bold">Étape 6 </h3>
               <img src={img6} alt="" className="" />
-              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Livrable du projet en pdf et Powerpoint avec accès au fichier source (pour la partie financière notamment) </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
+              1 échange téléphonique pour bien comprendre votre projet 
+              </p>
             </div>
-          </div>
-          <div
-            className="slide"
-            data-color="linear-gradient(to top, #151926, #53aab1)"
-          >
-            <div>
-              <h3 className="text-xl font-bold">Étape 7 </h3>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="bg-white">
+              <h3 className="text-xl font-bold">Étape 7</h3>
               <img src={img7} alt="" className="" />
-              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">Présentation du projet et collaboration avec vous pour assurer une prise en main complète, favorisant ainsi votre totale indépendance et autonomie </p>
+              <p className="text-xs bg-[#040c1b] rounded-b-lg p-2">
+              1 échange téléphonique pour bien comprendre votre projet 
+              </p>
             </div>
+        </SwiperSlide>
+
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
         </div>
-      </div>
+      </Swiper>
+
+
+      <p className="text-center text-white py-8">
+            Voici un aperçu de notre processus de missions. Cependant, afin de
+            vous proposer une offre sur mesure, nous adaptons nos méthodes à
+            votre projet, à votre façon de travailler et aux aléas éventuels.
+            que nous pourrions rencontrer.
+          </p>
     </div>
   );
 };
