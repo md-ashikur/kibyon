@@ -214,108 +214,75 @@ const VideoOnScroll = () => {
       <div id="main">
         <div className="lal"></div>
         <div className="lal2"></div>
-        <div className="lal"></div>
-        <div id="page">
-          <div id="loop">
-            <h1>
-              <b>CYBER</b>FICTION IS THE{" "}
-              <b>
-                <i>REAL</i>
-              </b>{" "}
-              <span>STORY</span> IN THE{" "}
-              <span>
-                <i>METAVERSE.</i>
-              </span>
-            </h1>
-            <h1>
-              <b>CYBER</b>FICTION IS THE{" "}
-              <b>
-                <i>REAL</i>
-              </b>{" "}
-              <span>STORY</span> IN THE{" "}
-              <span>
-                <i>METAVERSE.</i>
-              </span>
-            </h1>
-            <h1>
-              <b>CYBER</b>FICTION IS THE{" "}
-              <b>
-                <i>REAL</i>
-              </b>{" "}
-              <span>STORY</span> IN THE{" "}
-              <span>
-                <i>METAVERSE.</i>
-              </span>
-            </h1>
+        <div className="page-container">
+          <div className="page">
+            <canvas ref={canvasRef}></canvas>
           </div>
-          <h3>
-            CYBERFICTION AIMS TO BE A DECENTRALIZED COMMUNITY THAT CAN <br />
-            CREATE NEW VALUES AND PROFITS THROUGH PLAY IN THE VIRTUAL <br />
-            WORLD.
-          </h3>
-          <h4>...SCROLL TO READ</h4>
-          <canvas ref={canvasRef} className="canvas"></canvas>
-        </div>
-        <div id="page1">
-          <div id="right-text">
-            <h3>CYBERFICTION / KEY WORD</h3>
-            <h1>
-              HAVE FUN
-              <br />
-              LET'S PLAY
-            </h1>
-            <h3>CYBERFICTION / KEY WORD</h3>
-            <h1>
-              HAVE FUN
-              <br />
-              LET'S PLAY
-            </h1>
-            <h3>CYBERFICTION / KEY WORD</h3>
-            <h1>
-              HAVE FUN
-              <br />
-              LET'S PLAY
-            </h1>
-            <h3>CYBERFICTION / KEY WORD</h3>
-            <h1>
-              HAVE FUN
-              <br />
-              LET'S PLAY
-            </h1>
-          </div>
-        </div>
-        <div id="page2">
           <div id="left-text">
             <h3>CYBERFICTION / KEY WORD</h3>
             <h1>
-              ARTIFICIAL
+              MARKET
               <br />
-              INTELLIGENCE
+              STUDY
             </h1>
             <h3>CYBERFICTION / KEY WORD</h3>
             <h1>
-              ARTIFICIAL
+              MARKET
               <br />
-              INTELLIGENCE
+              STUDY
             </h1>
             <h3>CYBERFICTION / KEY WORD</h3>
             <h1>
-              ARTIFICIAL
+              MARKET
               <br />
-              INTELLIGENCE
+              STUDY
             </h1>
             <h3>CYBERFICTION / KEY WORD</h3>
             <h1>
-              ARTIFICIAL
+              MARKET
               <br />
-              INTELLIGENCE
+              STUDY
             </h1>
           </div>
         </div>
-        <div id="page3">
+        <div className="page-container">
+          <div className="page">
+            <canvas ref={canvasRef}></canvas>
+          </div>
           <div id="right-text">
             <h3>CYBERFICTION / KEY WORD</h3>
             <h1>
+              ARTIFICIAL
+              <br />
+              INTELLIGENCE
+            </h1>
+            <h3>CYBERFICTION / KEY WORD</h3>
+            <h1>
+              ARTIFICIAL
+              <br />
+              INTELLIGENCE
+            </h1>
+            <h3>CYBERFICTION / KEY WORD</h3>
+            <h1>
+              ARTIFICIAL
+              <br />
+              INTELLIGENCE
+            </h1>
+            <h3>CYBERFICTION / KEY WORD</h3>
+            <h1>
+              ARTIFICIAL
+              <br />
+              INTELLIGENCE
+            </h1>
+          </div>
+        </div>
+        <div className="page-container">
+          <div className="page">
+            <canvas ref={canvasRef}></canvas>
+          </div>
+          <div id="left-text">
+            <h3>CYBERFICTION / KEY WORD</h3>
+            <h1>
               BLOCKCHAIN
               <br />
               TECHNOLOGY
@@ -340,8 +307,6 @@ const VideoOnScroll = () => {
             </h1>
           </div>
         </div>
-
-        
       </div>
     </div>
   );
