@@ -36,7 +36,7 @@ const OfferHeader = () => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerGroup={1}
+      
         slidesPerView="auto"
         spaceBetween={170}
         coverflowEffect={{
@@ -45,6 +45,7 @@ const OfferHeader = () => {
           depth: 100,
           modifier: 2.5,
         }}
+        
         pagination={{ el: '.swiper-pagination', clickable: true }}
         navigation={{
           nextEl: '.next',
@@ -59,7 +60,7 @@ const OfferHeader = () => {
         <SwiperSlide>
         <div className="rounded-lg  bg-gradient-to-t from-[#080E1A]  to-[#1A3D5F]  ">
               <h3 className="text-lg font-bold pt-3">Étape 1 </h3>
-              <img src={img1} alt="" className="" />
+              <img src={img1} alt="" className="!w-[300px] !h-[300px]" />
               <p className="text-xs bg-[#080E1A] text-justify  rounded-b-lg p-3">
               1 échange téléphonique pour bien comprendre votre projet 
               </p>
@@ -125,6 +126,29 @@ const OfferHeader = () => {
               </p>
             </div>
         </SwiperSlide>
+
+        {/* extra------------ */}
+        <SwiperSlide>
+        <div className="rounded-lg bg-gradient-to-t from-[#678CA7] to-[#B4CEDB] to-90%">
+              <h3 className="text-lg font-bold pt-3">Étape 6 </h3>
+              <img src={img6} alt="" className="" />
+              <p className="text-xs bg-[#678CA7] text-justify  rounded-b-lg p-3">
+              Livrable du projet en pdf et Powerpoint avec accès au fichier source (pour la partie financière notamment) 
+              </p>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="rounded-lg bg-gradient-to-t from-[#27445A] to-[#4D9FA9]">
+              <h3 className="text-lg font-bold pt-3">Étape 7</h3>
+              <div className="h-[280px] overflow-hidden">
+             <img src={img7} alt="" className="" />
+             </div>
+              <p className="text-xs bg-[#27445A] text-justify  rounded-b-lg p-3">
+              Présentation du projet et collaboration avec vous pour assurer une prise en main complète, favorisant ainsi votre totale indépendance et autonomie
+              </p>
+            </div>
+        </SwiperSlide>
+       
 
         <div className="slider-controler">
           <div className="prev text-3xl slider-arrow ">
