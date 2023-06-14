@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
+import "swiper/swiper-bundle.css";
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -36,6 +36,7 @@ const OfferHeader = () => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
+        slidesPerGroup={1}
         slidesPerView="auto"
         spaceBetween={170}
         coverflowEffect={{
@@ -59,7 +60,7 @@ const OfferHeader = () => {
         <div className="rounded-lg  bg-gradient-to-t from-[#080E1A]  to-[#1A3D5F]  ">
               <h3 className="text-lg font-bold pt-3">Étape 1 </h3>
               <img src={img1} alt="" className="" />
-              <p className="text-xs bg-[#050912] text-justify  rounded-b-lg p-3">
+              <p className="text-xs bg-[#080E1A] text-justify  rounded-b-lg p-3">
               1 échange téléphonique pour bien comprendre votre projet 
               </p>
             </div>
@@ -72,7 +73,7 @@ const OfferHeader = () => {
              <div className="h-[280px] overflow-hidden">
              <img src={img2} alt="" className="" />
              </div>
-              <p className="text-xs bg-[#BC3046] text-justify  rounded-b-lg p-3">
+              <p className="text-xs bg-[#9F3936] text-justify  rounded-b-lg p-3">
               Collecte des éléments disponibles du projet et collaboration pour obtenir les éléments manquants 
               </p>
             </div>
@@ -99,7 +100,7 @@ const OfferHeader = () => {
         <div className="rounded-lg bg-gradient-to-t to-[#076167] from-[#000000] to-90%">
               <h3 className="text-lg font-bold pt-3">Étape 5 </h3>
               <img src={img5} alt="" className="" />
-              <p className="text-xs bg-[#076167] text-justify  rounded-b-lg p-3">
+              <p className="text-xs bg-[#01191a] text-justify  rounded-b-lg p-3">
               Plusieurs échanges complémentaires au fil de la mission pour préciser le projet et réfléchir ensemble aux meilleurs choix pour vous 
               </p>
             </div>
@@ -126,10 +127,10 @@ const OfferHeader = () => {
         </SwiperSlide>
 
         <div className="slider-controler">
-          <div className="prev text-3xl slider-arrow">
+          <div className="prev text-3xl slider-arrow ">
            <BsArrowLeftShort/>
           </div>
-          <div className="next text-3xl slider-arrow">
+          <div className="next text-3xl slider-arrow ">
             <BsArrowRightShort/>
           </div>
 
