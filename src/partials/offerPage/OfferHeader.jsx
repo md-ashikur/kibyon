@@ -74,7 +74,7 @@ const OfferHeader = () => {
              <div className="h-[280px] overflow-hidden">
              <img src={img2} alt="" className="" />
              </div>
-              <p className="text-xs font-bold bg-[#9F3936] text-justify  rounded-b-lg p-3">
+              <p className="text-xs font-bold bg-[#b05345] text-justify  rounded-b-lg p-3">
               Collecte des éléments disponibles du projet et collaboration pour obtenir les éléments manquants 
               </p>
             </div>
