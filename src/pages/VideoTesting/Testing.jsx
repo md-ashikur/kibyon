@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Test.css';
 import vid from "../../Videos/WP - Section 3 -Services 5 étoiles VF-03_2023.blend0001-0400.mp4";
-import vid2 from "../../Videos/Market_reasearch_VF-05_2023_AdobeExpress.mp4";
+import vid2 from "../../Videos/tesrt.mp4";
 
 const Testing = () => {
   const registerVideo = (boundSelector, videoSelector) => {
@@ -34,7 +34,7 @@ const Testing = () => {
         <div className="content">
           <p>WebM Video</p>
           <video width="600" muted preload>
-            <source src={vid} type="video/webm" />
+            <source src={vid2} type="video/mp4" />
             <p>Your user agent does not support the HTML5 Video element.</p>
           </video>
         </div>
@@ -44,7 +44,7 @@ const Testing = () => {
         <div className="content">
           <p>MP4 Video - Keyframe Interval 1</p>
           <video width="600" muted preload>
-            <source src={vid2} type="video/mp4" />
+            <source src={vid} type="video/mp4" />
             <p>Your user agent does not support the HTML5 Video element.</p>
           </video>
         </div>
