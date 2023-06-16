@@ -135,7 +135,7 @@ const VideoOnScroll = () => {
       ease: `none`,
       scrollTrigger: {
         scrub: 0.15,
-        trigger: `#page>canvas`,
+        trigger: `#page`,
         start: `top top`,
         end: `600% top`,
         scroller: `#main`,
@@ -169,6 +169,7 @@ const VideoOnScroll = () => {
         img.height * ratio
       );
     }
+    
     
     ScrollTrigger.create({
       trigger: "#page>canvas",

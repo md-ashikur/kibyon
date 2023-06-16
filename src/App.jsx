@@ -16,6 +16,7 @@ import Offer from './pages/OfferPage/Offer';
 import Accueil from './pages/Accueil/Accueil';
 import VideoTest from './pages/VideoTesting/VideoTest';
 import VideoOnScroll from './pages/VideoTesting/VideoOnScroll';
+import Testing from './pages/VideoTesting/Testing';
 
 function App() {
   Aos.init();
@@ -39,6 +40,7 @@ function App() {
         <Route path="/legal" element={<LegalPage />} />
         <Route path="/video" element={<VideoTest />} />
         <Route path="/test" element={<VideoOnScroll />} />
+        <Route path="/t" element={<Testing />} />
        
        
         <Route path="" element={<Footer/>} />
