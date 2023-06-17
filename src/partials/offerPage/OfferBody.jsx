@@ -6,17 +6,18 @@ import OfferSceFour from './OfferSceFour';
 import OfferSecFive from './OfferSecFive';
 import OfferHeader from './OfferHeader';
 import VideoOnScroll from '../../pages/VideoTesting/VideoOnScroll';
+import Testing from '../../pages/VideoTesting/Testing';
 
 const OfferBody = () => {
     return (
         <div>
              <OfferPage/>
             <OfferHeader/>
-         
+         <Testing/>
             {/* <OfferSecTwo/> */}
             {/* <OfferSecThree/> */}
-            {/* <OfferSceFour/> */}
-            {/* <OfferSecFive/> */}
+            <OfferSceFour/>
+            <OfferSecFive/>
         </div>
     );
 };

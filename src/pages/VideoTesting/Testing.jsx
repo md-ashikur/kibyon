@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Test.css';
-import vid from "../../Videos/WP - Section 3 -Services 5 étoiles VF-03_2023.blend0001-0400.mp4";
-import vid2 from "../../Videos/tesrt.mp4";
+import vid from "../../Videos/Market reasearch.mp4";
+import vid2 from "../../Videos/Prévi VF (2023).mp4";
 
 const Testing = () => {
   const registerVideo = (boundSelector, videoSelector) => {
@@ -25,16 +25,16 @@ const Testing = () => {
   useEffect(() => {
     registerVideo("#bound-one", "video");
     registerVideo("#bound-two", "video");
-    registerVideo("#bound-three", "video");
+    // registerVideo("#bound-three", "video");
   }, []);
 
   return (
-    <div className="app">
+    <div className="">
       <div id="bound-one" className="scroll-bound">
         <div className="content">
-          <p>WebM Video</p>
-          <video width="600" muted preload>
-            <source src={vid2} type="video/mp4" />
+         
+          <video width="full" muted preload>
+            <source src={vid} type="video/mp4" />
             <p>Your user agent does not support the HTML5 Video element.</p>
           </video>
         </div>
@@ -42,14 +42,14 @@ const Testing = () => {
 
       <div id="bound-two" className="scroll-bound">
         <div className="content">
-          <p>MP4 Video - Keyframe Interval 1</p>
-          <video width="600" muted preload>
-            <source src={vid} type="video/mp4" />
+         
+          <video width="full" muted preload>
+            <source src={vid2} type="video/mp4" />
             <p>Your user agent does not support the HTML5 Video element.</p>
           </video>
         </div>
       </div>
-
+{/* 
       <div id="bound-three" className="scroll-bound">
         <div className="content">
           <p>MP4 Video - Keyframe Interval 20</p>
@@ -58,7 +58,9 @@ const Testing = () => {
             <p>Your user agent does not support the HTML5 Video element.</p>
           </video>
         </div>
-      </div>
+      </div> */}
+
+     
     </div>
   );
 };

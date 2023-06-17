@@ -54,7 +54,7 @@ const OfferSceFour = () => {
 
       {/* =========1st block========= */}
       <div className="relative text-base-100 bg-primary py-28 lg:h-[250vh] h-[150vh] ">
-        <div className="flex justify-center mt-72"  data-aos="zoom-in" data-aos-anchor-placement="top-center" >
+        <div className="flex justify-center mt-72" >
           <div ref={parallaxRef} className="lg:w-[60%] overflow-hidden rounded-lg mx-5">
             <img src={imgSrc} alt="" className="w-full" />
           </div>
@@ -62,7 +62,7 @@ const OfferSceFour = () => {
 
 {/* ---------top text block-------- */}
         <div className="card p-8 absolute lg:top-32 top-10 mx-5 lg:left-20 lg:w-[50%] border border-secondary"
-         data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+         >
           <h2 className="lg:text-2xl font-bold my-5">
             Qu’est-ce qu’un Business plan ?
           </h2>
@@ -80,7 +80,7 @@ const OfferSceFour = () => {
 {/* ----------bottom text- block----------- */}
         <div className="py-20">
           <div className="card p-8 absolute mx-5 lg:bottom-20 bottom-10 lg:right-28 lg:w-[50%] border border-secondary"
-           data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="2000"
+           
            >
             <h2 className="lg:text-2xl font-bold my-5 ">
               Pourquoi faire un Business plan ?
@@ -116,11 +116,11 @@ const OfferSceFour = () => {
       <div className="relative bg-primary lg:px-20 px-5 py-28">
         <div className="grid lg:grid-cols-2 gap-5">
 
-          <div ref={parallaxRefTwo} className="w- overflow-hidden rounded-2xl"  data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+          <div ref={parallaxRefTwo} className="w- overflow-hidden rounded-2xl"  >
             <img src={block3} alt="" className="w-full" />
           </div>
 
-          <div className="p-5 card border border-secondary"  data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+          <div className="p-5 card border border-secondary">
               <h2 className="lg:text-2xl text-xl font-bold text-secondary my-5">
                 Comment cela va-t-il se dérouler ?
               </h2>

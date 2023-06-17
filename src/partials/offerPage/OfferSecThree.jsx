@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import video from "../../Videos/Market_reasearch_VF-05_2023_AdobeExpress.mp4";
+
 
 const OfferSecThree = () => {
 
@@ -154,9 +154,6 @@ const OfferSecThree = () => {
         <div className="h-screen">
           <div className="spacer"></div>
 
-          <video className="video !h-screen !w-full object-cover">
-            <source src={video} type="video/mp4" />
-          </video>
           
         </div>
       </section>
