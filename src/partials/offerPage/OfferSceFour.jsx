@@ -9,24 +9,24 @@ const OfferSceFour = () => {
   const parallaxRef = useRef(null);
   const parallaxRefTwo = useRef(null);
 
-  useEffect(() => {
-    const parallaxElement = parallaxRef.current;
+  // useEffect(() => {
+  //   const parallaxElement = parallaxRef.current;
 
-    const imgElement = parallaxElement.querySelector("img");
+  //   const imgElement = parallaxElement.querySelector("img");
 
-    gsap.to(imgElement, {
-      yPercent: -10,
-      scale: 1.9,
-      ease: "none",
-      scrollTrigger: {
-        trigger: parallaxElement,
-        start: "top center",
-        end: "bottom center",
+  //   gsap.to(imgElement, {
+  //     yPercent: -10,
+  //     scale: 1.9,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: parallaxElement,
+  //       start: "top center",
+  //       end: "bottom center",
 
-        scrub: true,
-      },
-    });
-  }, []);
+  //       scrub: true,
+  //     },
+  //   });
+  // }, []);
 
   // =====2ND BLOCK============
 
@@ -53,14 +53,14 @@ const OfferSceFour = () => {
 
 
       {/* =========1st block========= */}
-      <div className="relative text-base-100 bg-primary py-28 lg:h-[250vh] h-[150vh] ">
+      {/* <div className="relative text-base-100 bg-primary py-28 lg:h-[250vh] h-[150vh] ">
         <div className="flex justify-center mt-72" >
           <div ref={parallaxRef} className="lg:w-[60%] overflow-hidden rounded-lg mx-5">
             <img src={imgSrc} alt="" className="w-full" />
           </div>
         </div>
 
-{/* ---------top text block-------- */}
+
         <div className="card p-8 absolute lg:top-32 top-10 mx-5 lg:left-20 lg:w-[50%] border border-secondary"
          >
           <h2 className="lg:text-2xl font-bold my-5">
@@ -77,7 +77,7 @@ const OfferSceFour = () => {
             précisément dans quelle direction vous allez et de quelle façon.
           </p>
         </div>
-{/* ----------bottom text- block----------- */}
+
         <div className="py-20">
           <div className="card p-8 absolute mx-5 lg:bottom-20 bottom-10 lg:right-28 lg:w-[50%] border border-secondary"
            
@@ -108,7 +108,7 @@ const OfferSceFour = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
    
 
