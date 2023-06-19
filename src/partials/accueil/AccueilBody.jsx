@@ -7,7 +7,6 @@ import Wheader from "./Wheader/Wheader";
 import welcomeBg from "../../img/intro welcome page background.png";
 import HSecFour from "./HSection4/HSecFour";
 
-
 const AccueilBody = () => {
   return (
     <div className=" ">
@@ -21,16 +20,14 @@ const AccueilBody = () => {
           />
         </div>
 
-        <div className="absolute top-10 ">
+        <div className="absolute top-2 ">
           <Wheader />
         </div>
       </div>
-    
-        <WsecOne />
-     
-      {/* <section className="relative z-20">
-        <WSecTwo />
-      </section> */}
+
+      <WsecOne />
+      <WSecTwo />
+
       {/* <HSecFour /> */}
     </div>
   );

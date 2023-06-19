@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 import kibyonText from "../../../img/Welcome page/kt.png";
@@ -32,9 +32,10 @@ const WSecTwo = () => {
       </div>
       <ParallaxProvider>
         <ParallaxBanner
-          layers={[{ image: kibyonBg, speed: -20 }]}
+          layers={[{ image:kibyonBg, speed: -20 }]}
           className="aspect-[2.2/1]"
         >
+          
           <div className="absolute inset-0 flex items-center justify-center">
             <img src={kibyonText} alt="" />
           </div>
@@ -48,15 +49,14 @@ const WSecTwo = () => {
           <div className="grid  lg:grid-cols-2 gap-5" 
          >
             <p className="p-5 inverseCol"  
-            data-aos="fade-up"
+       
           >
               Ce qui nous anime et ce qui fait l’ADN de ce cabinet, c’est
               d’accompagner les chefs d’entreprises et de prendre toute notre
               part dans les défis actuels que rencontrent nos entreprises et
               sociétés en perpétuelle mutation dans une économie globalisée.
             </p>
-            <p className="p-5"  data-aos="fade-up"
-         data-aos-duration="3000">
+            <p className="p-5" >
               Les créateurs et dirigeants d’entreprises sont souvent bien trop
               isolés. Nous souhaitons être un appui et un partenaire de
               confiance qui sait rester flexible et s’adapter à chaque besoin
@@ -67,7 +67,7 @@ const WSecTwo = () => {
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-5">
-            <p className="p-5"  data-aos="fade-up"
+            <p className="p-5" 
          >
               L’objectif est de donner un autre regard aux dirigeants, en nous
               basant sur des faits et une connaissance accrue de votre
@@ -78,8 +78,7 @@ const WSecTwo = () => {
               plus efficiente possible en fonction des objectifs fixés et de la
               stratégie définis.
             </p>
-            <p className="p-5"  data-aos="fade-up"
-           data-aos-duration="3000">
+            <p className="p-5" >
               Nous saurons à la fois vous guider pour performer et affronter le
               quotidien qui est le vôtre. Mais également innover, être
               imaginatifs pour trouver des solutions en tenant compte des

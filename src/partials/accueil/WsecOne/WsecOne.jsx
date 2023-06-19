@@ -11,7 +11,7 @@ import { OrbitControls } from "@react-three/drei";
 const WsecOne = () => {
   return (
     <div>
-      <div className="relative overflow-x-hidden h-screen flex items-center">
+      <div id="shoe" className="relative overflow-x-hidden h-screen flex items-center">
         <div className="lg:px-20 grid lg:grid-cols-2 ">
           {/* shoe block----- */}
           <div>
@@ -52,7 +52,7 @@ const WsecOne = () => {
         </div>
         </div>
         {/* plane---------- */}
-        <div className="relative h-screen flex items-center bg-[#0120aa]">
+        <div id="plane" className="relative h-screen flex items-center bg-[#0120aa]">
           <div className="grid lg:grid-cols-2 lg:p-20 text-white">
             <div>
               <h2 className="text-3xl font-semibold my-10">
@@ -79,7 +79,7 @@ const WsecOne = () => {
           </div>
         </div>
         {/* hand--------------------- */}
-        <div className="relative overflow-hidden flex items-center">
+        <div id="hand" className="relative overflow-hidden flex items-center">
           <div className="lg:p-20  grid lg:grid-cols-2 h-screen  ">
             <div
               className=""
@@ -123,7 +123,7 @@ const WsecOne = () => {
 
         {/* map block----- */}
 
-        <div className="relative h-screen bg-[#0120aa] flex items-center">
+        <div id="map" className="relative h-screen bg-[#0120aa] flex items-center">
           <div className="lg:px-20  grid lg:grid-cols-2 text-base-100">
             <div className="p-5">
               <h2 className="lg:text-3xl text-2xl font-semibold my-10">
