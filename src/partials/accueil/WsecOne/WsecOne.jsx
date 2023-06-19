@@ -5,22 +5,18 @@ import "./WsecOne.css";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Hand } from "../Model/Hand";
-import { Shoes } from "../Model/Shoes";
+import { Shoes } from "./Shoes";
 import { OrbitControls } from "@react-three/drei";
 
 const WsecOne = () => {
   return (
     <div>
-      <div className="relative mt-10 z-50 overflow-x-hidden">
-        <div className="absolute top-40 lg:px-20 grid lg:grid-cols-2 h-screen">
+      <div className="relative overflow-x-hidden h-screen flex items-center">
+        <div className="lg:px-20 grid lg:grid-cols-2 ">
           {/* shoe block----- */}
-          <div
-            data-aos="fade-right"
-            data-aos-anchor-placement="top-center"
-            data-aos-duration="2000"
-          >
-            <Canvas
-              className="-mt-28 "
+          <div>
+            {/* <Canvas
+              className="mt-28"
               camera={{ fov: 70, position: [1, 2, 2] }}
             >
               <Suspense fallback={null}>
@@ -40,13 +36,9 @@ const WsecOne = () => {
                   scale={0.15}
                 />
               </Suspense>
-            </Canvas>
+            </Canvas> */}
           </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-anchor-placement="top-center"
-            className="p-7"
-          >
+          <div>
             <h2 className="text-3xl font-semibold my-10">
               Choisir Kibyon, c’est oser avancer.
             </h2>
@@ -58,14 +50,11 @@ const WsecOne = () => {
             </p>
           </div>
         </div>
+        </div>
         {/* plane---------- */}
-        <div className="relative -mt-20">
-          <div className="grid lg:grid-cols-2 lg:p-20 h-screen absolute top-10">
-            <div
-              data-aos="zoom-in-up"
-              data-aos-anchor-placement="top-center"
-              className="p-5 text-base-100"
-            >
+        <div className="relative h-screen flex items-center bg-[#0120aa]">
+          <div className="grid lg:grid-cols-2 lg:p-20 text-white">
+            <div>
               <h2 className="text-3xl font-semibold my-10">
                 Et si on avançait ensemble ?
               </h2>
@@ -90,8 +79,8 @@ const WsecOne = () => {
           </div>
         </div>
         {/* hand--------------------- */}
-        <div className="relative -mt-20 overflow-hidden">
-          <div className="lg:p-20  grid lg:grid-cols-2 h-screen absolute top-20  ">
+        <div className="relative overflow-hidden flex items-center">
+          <div className="lg:p-20  grid lg:grid-cols-2 h-screen  ">
             <div
               className=""
               data-aos="fade-right"
@@ -115,11 +104,7 @@ const WsecOne = () => {
                 </Suspense>
               </Canvas>
             </div>
-            <div
-              data-aos="zoom-in-up"
-              data-aos-anchor-placement="top-center"
-              className="p-5"
-            >
+            <div className="p-5">
               <h2 className="lg:text-3xl text-2xl font-semibold my-10">
                 Un conseil personnalisé et adapté
               </h2>
@@ -138,13 +123,9 @@ const WsecOne = () => {
 
         {/* map block----- */}
 
-        <div className="relative  -mt-20 overflow-hidden">
-          <div className="lg:px-20  grid lg:grid-cols-2 h-screen absolute top-40 text-base-100">
-            <div
-              data-aos="zoom-in-up"
-              data-aos-anchor-placement="top-center"
-              className="p-5"
-            >
+        <div className="relative h-screen bg-[#0120aa] flex items-center">
+          <div className="lg:px-20  grid lg:grid-cols-2 text-base-100">
+            <div className="p-5">
               <h2 className="lg:text-3xl text-2xl font-semibold my-10">
                 Pour répondre à vos besoins
               </h2>
@@ -158,21 +139,14 @@ const WsecOne = () => {
               </p>
             </div>
 
-            <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-center"
-              data-aos-duration="2000"
-            >
-              <video
-                className="video !h-96 !w-full object-cover -mt-28"
-                autoPlay
-              >
+            <div>
+              <video className="video !h-96 !w-full object-cover " autoPlay>
                 <source src={mapVideo} type="video/mp4" />
               </video>
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 };

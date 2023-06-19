@@ -21,17 +21,17 @@ const AccueilBody = () => {
           />
         </div>
 
-        {/* <div className="absolute top-10 ">
+        <div className="absolute top-10 ">
           <Wheader />
-        </div> */}
+        </div>
       </div>
-      {/* <section className=" top-20 z-20">
+    
         <WsecOne />
-      </section> */}
+     
       {/* <section className="relative z-20">
         <WSecTwo />
       </section> */}
-      <HSecFour />
+      {/* <HSecFour /> */}
     </div>
   );
 };

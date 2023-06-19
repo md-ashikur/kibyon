@@ -3,6 +3,13 @@ import "./Test.css";
 import vid from "../../Videos/Market reasearch.mp4";
 import vid2 from "../../Videos/Prévi VF (2023).mp4";
 import vid3 from "../../Videos/BP.mp4";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Testing = () => {
   const registerVideo = (boundSelector, videoSelector) => {
@@ -32,15 +39,18 @@ const Testing = () => {
     registerVideo("#bound-three", "video");
   }, []);
 
+// text animation===============
+  
+  
   return (
     <div className="relative">
       {/* TEXT for market research */}
-      <div className=" h-52 absolute text-white top-5 z-10 px-20">
+      <div className="block1 h-52 absolute text-white top-5 z-10 px-20">
         {/* 1st title=============== */}
-        <div>
-          <h1>Pourquoi faire une étude de marché ?</h1>
+        <div className="text-center text-justify">
+          <div className="text-3xl font-bold mt-28 title1" >Pourquoi faire une étude de marché ?</div>
           {/* •	Frame 72  */}
-          <p>
+          <p className="my-10">
             L’étude de marché va vous permettre d’éliminer ou de réduire les
             zones d’incertitudes qui subsistent dans vos différents projets. En
             vous apportant un regard sur les attentes de vos consommateurs et

@@ -1,15 +1,7 @@
 
-#bound-one {
-	background: #d0d8db;
-}
-#bound-two {
-	background: #dfcece;
-}
-#bound-three {
-	background: #D0D6B3;
-}
+
 .scroll-bound {
-	height: 700vh;
+	height: 800vh;
 	
 	.content {
 		height: 100vh;

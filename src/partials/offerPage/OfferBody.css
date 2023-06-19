@@ -73,38 +73,6 @@
 
   /* ==================section 2============= */
 
-  .spacer {
-    height: 15000px;
- }
- 
- .marketStudy {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    bottom: 0;
-    height: 10000px;
-    width: 100%;
-    transform: translateX(-50%) translateY(-50%);
-  
- }
-
- 
-  /* ==================section 3============= */
-
-  .spacer {
-    height: 15000px;
- }
- 
- .video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    bottom: 0;
-    height: 10000px;
-    width: 100%;
-    transform: translateX(-50%) translateY(-50%);
-  
- }
 
 
  /* =========section-4============== */
