@@ -30,9 +30,9 @@ const HSecFour = () => {
 
   return (
     <div className="relative">
-      <div className="absolute text-justify top-0 font-bold z-10 lg:px-20">
+      <div className="absolute text-justify top-0 font-semibold z-10 lg:px-20">
         <section class="container">
-          <div class="content !top-[30%] lg:!w-[35%] mt-52">
+          <div class="content !top-[35%] lg:!w-[35%] mt-52">
             <p className="">
               Tous nos services sont, comme évoqué précédemment, personnalisés
               et conçus sur mesure. Nous nous attachons à proposer des outils et
@@ -45,6 +45,11 @@ const HSecFour = () => {
               traduits en anglais et adaptés aux règles anglo-saxonnes
               (notamment pour les prévisionnels financiers).
             </p>
+          </div>
+        </section>
+        <section class="container">
+          <div class="content !top-[30%] lg:!w-[35%] ">
+            
           </div>
         </section>
         {/* ==========•	Appear frame 100==========2nd part================ */}
@@ -61,7 +66,8 @@ const HSecFour = () => {
               travaillons à la fois sur l’environnement externe et interne en
               prenant en compte l’ensemble des départements de votre entreprise
               (R.H, commercial, marketing, finance…) en fonction de la
-              pertinence que cela a dans votre projet et la mission confiée.
+              pertinence que cela a dans votre projet et la mission confiée.<br />
+              <br />
               L’idée est de proposer des recommandations, des stratégies et
               scenarios issus de nos analyses pour répondre aux problématiques
               de départ en faisant face aux défis futurs.
@@ -79,7 +85,8 @@ const HSecFour = () => {
               toujours de notoriété publique), à créer des partenariats
               pertinents, mettre en place des stratégies de coopétition…
             </p>
-
+            <br />
+              
             <p className="">
               Vous aurez toujours un consultant pour vous épauler, vous
               challenger, s’assurer que les objectifs sont suivis et qui se
@@ -94,7 +101,7 @@ const HSecFour = () => {
         {/* ========•	Appear frame 350==========3rd part=================== */}
         <section class="container">
           <div class="content flex justify-center !top-[70%] mt-20">
-            <p className="lg:!w-[70%]">
+            <p className="lg:!w-[828px] text-lg">
               Rejoignez la communauté Kibyon et ne soyez plus jamais seul face
               aux défis de l’entreprenariat et plus largement à ceux auxquels
               vous serez confronté tout au long de la vie de votre entreprise.

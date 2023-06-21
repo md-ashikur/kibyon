@@ -43,11 +43,14 @@
     height: 600px;
 }
 .container:nth-of-type(2) {
-    height: 800px;
+    height: 100px;
 }
 .container:nth-of-type(3) {
     height: 800px;
 }
 .container:nth-of-type(4) {
-    height: 500px;
+    height: 800px;
+}
+.container:nth-of-type(5) {
+    height: 400px;
 }
