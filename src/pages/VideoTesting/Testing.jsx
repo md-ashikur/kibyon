@@ -3,13 +3,9 @@ import "./Test.css";
 import vid from "../../Videos/Market reasearch.mp4";
 import vid2 from "../../Videos/Prévi VF (2023).mp4";
 import vid3 from "../../Videos/BP.mp4";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-AOS.init();
+
 
 const Testing = () => {
   const registerVideo = (boundSelector, videoSelector) => {
