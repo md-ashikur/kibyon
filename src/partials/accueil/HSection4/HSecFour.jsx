@@ -23,7 +23,7 @@ const HSecFour = () => {
     
       useEffect(() => {
         registerVideo("#bound-one", "video");
-        registerVideo("#bound-two", "video");
+       
       }, []);
 
     return (
@@ -37,14 +37,7 @@ const HSecFour = () => {
           </video>
         </div>
       </div>
-      <div id="bound-two" className="scroll-bound relative">
-        <div className="content">
-          <video width="full" muted preload>
-            <source src={homeVideo} type="video/mp4" />
-            <p>Your user agent does not support the HTML5 Video element.</p>
-          </video>
-        </div>
-      </div>
+     
     </div>
     );
 };

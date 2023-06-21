@@ -28,7 +28,7 @@ const AccueilBody = () => {
       <WsecOne />
       <WSecTwo />
 
-      {/* <HSecFour /> */}
+      <HSecFour />
     </div>
   );
 };
