@@ -32,7 +32,7 @@ const HSecFour = () => {
     <div className="relative">
       <div className="absolute text-justify top-0 font-semibold z-10 lg:px-20">
         <section class="container">
-          <div class="content !top-[35%] lg:!w-[35%] mt-52">
+          <div class="content !p-0 !top-[35%] lg:!w-[35%] mt-52">
             <p className="">
               Tous nos services sont, comme évoqué précédemment, personnalisés
               et conçus sur mesure. Nous nous attachons à proposer des outils et
