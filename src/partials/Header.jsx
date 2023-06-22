@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from "../img/logo.png";
 import "./Header.css";
@@ -9,6 +9,7 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
 
   return (
     <nav className="bg-primary text-base-100 sticky top-0 lg:px-10 z-50">

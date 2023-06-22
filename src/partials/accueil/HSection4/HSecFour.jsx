@@ -32,7 +32,7 @@ const HSecFour = () => {
     <div className="relative">
       <div className="absolute text-justify top-0 font-semibold z-10 lg:px-20">
         <section class="container">
-          <div class="content !p-0 !top-[35%] lg:!w-[35%] mt-52">
+          <div class="content  !top-[35%] lg:!w-[35%] mt-52">
             <p className="">
               Tous nos services sont, comme évoqué précédemment, personnalisés
               et conçus sur mesure. Nous nous attachons à proposer des outils et
@@ -47,6 +47,7 @@ const HSecFour = () => {
             </p>
           </div>
         </section>
+
         <section class="container">
           <div class="content !top-[30%] lg:!w-[35%] ">
             
@@ -54,7 +55,7 @@ const HSecFour = () => {
         </section>
         {/* ==========•	Appear frame 100==========2nd part================ */}
         <section class="container">
-          <div class="content  !top-[20%]">
+          <div class="content !pl-5 !top-[20%]">
             <p className="lg:!w-[35%]">
               Les missions sont ponctuées de temps d’échanges et de réflexions
               communes pour que nous nous posions collectivement les bonnes
@@ -101,7 +102,7 @@ const HSecFour = () => {
         {/* ========•	Appear frame 350==========3rd part=================== */}
         <section class="container">
           <div class="content flex justify-center !top-[70%] mt-20">
-            <p className="lg:!w-[828px] text-lg">
+            <p className="lg:!w-[920px] text-xl">
               Rejoignez la communauté Kibyon et ne soyez plus jamais seul face
               aux défis de l’entreprenariat et plus largement à ceux auxquels
               vous serez confronté tout au long de la vie de votre entreprise.

@@ -3,8 +3,14 @@ import {  NavLink } from "react-router-dom";
 import logo from "../../img/logo.png";
 import "./Navbar.css";
 const Navbar = () => {
+
+
+  window.addEventListener("scroll", function(){
+    var navbar = document.querySelector("header");
+    navbar.classList.toggle("sticky", window.scrollY > 0)
+  })
   return (
-    <div className="navbar bg-primary text-base-100 sticky top-0 lg:px-10 z-100">
+    <header className="navbar bg-primary text-base-100 sticky top-0 lg:px-10 z-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -43,6 +49,8 @@ const Navbar = () => {
         </div>
         <img src={logo} alt="" className="w-28" />
       </div>
+      
+      {/* mobile  */}
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
@@ -59,7 +67,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -1,3 +1,10 @@
 .active{
     color: #2c71f6;
 }
+.sticky {
+    background-color: #f00; /* Change this to your desired background color */
+  }
+  
+  .sticky.transparent {
+    background-color: transparent;
+  }

@@ -18,6 +18,7 @@ import VideoTest from './pages/VideoTesting/VideoTest';
 import VideoOnScroll from './pages/VideoTesting/VideoOnScroll';
 import Testing from './pages/VideoTesting/Testing';
 import HSecFour from './partials/accueil/HSection4/HSecFour';
+import OSecThree from './partials/offerPage/OSection3/OSecThree';
 
 function App() {
   Aos.init();
@@ -43,7 +44,7 @@ function App() {
 
         <Route path="/video" element={<VideoTest />} />
         <Route path="/test" element={<VideoOnScroll />} />
-        <Route path="/t" element={<Testing />} />
+        <Route path="/t" element={<OSecThree />} />
         <Route path="/tt" element={<HSecFour />} />
 
        
