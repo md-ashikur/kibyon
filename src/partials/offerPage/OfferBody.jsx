@@ -15,9 +15,7 @@ const OfferBody = () => {
              <OfferPage/>
             <OfferHeader/>
         <OSecThree/>
-            {/* <OfferSecTwo/> */}
-            {/* <OfferSecThree/> */}
-            <OfferSceFour/>
+           
             <OfferSecFive/>
         </div>
     );

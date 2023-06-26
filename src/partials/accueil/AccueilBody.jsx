@@ -6,6 +6,7 @@ import WSecThree from "./WSceThree/WSecThree";
 import Wheader from "./Wheader/Wheader";
 import welcomeBg from "../../img/intro welcome page background.png";
 import HSecFour from "./HSection4/HSecFour";
+import VideoTest from "../../pages/VideoTesting/VideoTest";
 
 const AccueilBody = () => {
   return (
@@ -29,6 +30,7 @@ const AccueilBody = () => {
       <WSecTwo />
 
       <HSecFour />
+     
     </div>
   );
 };

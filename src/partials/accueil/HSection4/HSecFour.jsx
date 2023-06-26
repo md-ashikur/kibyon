@@ -31,6 +31,7 @@ const HSecFour = () => {
   return (
     <div className="relative">
       <div className="absolute text-justify top-0 font-semibold z-10 lg:px-20">
+        {/* 1st part--------- */}
         <section class="container">
           <div class="content  !top-[35%] lg:!w-[35%] mt-52">
             <p className="">
@@ -48,15 +49,11 @@ const HSecFour = () => {
           </div>
         </section>
 
-        <section class="container">
-          <div class="content !top-[30%] lg:!w-[35%] ">
-            
-          </div>
-        </section>
+       {/* 2nd part */}
         {/* ==========•	Appear frame 100==========2nd part================ */}
         <section class="container">
-          <div class="content !pl-5 !top-[20%]">
-            <p className="lg:!w-[35%]">
+          <div class="content lg:!w-[35%] !top-[20%]">
+            <p className="">
               Les missions sont ponctuées de temps d’échanges et de réflexions
               communes pour que nous nous posions collectivement les bonnes
               questions et que nous choisissions les stratégies les plus
@@ -76,8 +73,9 @@ const HSecFour = () => {
           </div>
         </section>
 
+{/* 3rd part */}
         <section class="container">
-          <div class="content lg:!w-[35%] !top-[20%] mt-20">
+          <div class="content lg:!w-[35%] !top-[20%]">
             <p>
               Nous apportons l’appui de notre réseau pour vous mettre en
               relation au bon moment avec les bons experts (publics et privés),
@@ -98,7 +96,7 @@ const HSecFour = () => {
             </p>
           </div>
         </section>
-
+{/* 4th part */}
         {/* ========•	Appear frame 350==========3rd part=================== */}
         <section class="container">
           <div class="content flex justify-center !top-[70%] mt-20">
