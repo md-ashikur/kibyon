@@ -7,6 +7,9 @@ import Wheader from '../../partials/accueil/Wheader/Wheader';
 import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import kibyonText from "../../img/Welcome page/kt.png";
 import kibyonBg from "../../img/Welcome page/Untitled-1.jpg";
+import { Link } from 'react-router-dom';
+import welcomeBg from "../../img/intro welcome page background.png";
+
 
 const VideoTest = () => {
   useEffect(() => {
@@ -39,11 +42,26 @@ const VideoTest = () => {
 
   return (
     <div>
-     <div className='h-52 bg-red-400'></div>
+ <div className=" relative  overflow-hidden z-20">
+        <div className="h-screen w-full -mt-7">
+          <img
+            src={welcomeBg}
+            alt=""
+            draggable={false}
+            className="object-cover lg:object-none h-full lg:h-screen lg:w-full"
+          />
+        </div>
+
+        <div className="absolute top-2 ">
+          <Wheader />
+        </div>
+      </div>
+<WsecOne />
+   
       {/* Section 1 */}
       <section className="section1 bg-primary ">
-        <div className="h-screen w-full text-white ">
-        <h1 className='text-3xl font-bold text-center p-20'> Et si nous mettions nos compétences au service du plus grand nombre ?</h1>
+        <div className="h-auto w-full text-white ">
+        <h1 className='text-3xl font-bold text-center px-20 py-28'> Et si nous mettions nos compétences au service du plus grand nombre ?</h1>
         <ParallaxProvider>
         <ParallaxBanner
           layers={[{ image:kibyonBg, speed: -20 }]}
@@ -105,9 +123,16 @@ const VideoTest = () => {
         </div>
       </section>
 
-     
-
       <div id="cursor"></div>
+
+      <div className='bg-primary flex justify-center py-20'>
+      <Link to="/about">
+                <button className="text-white border p-4 hover:bg-white hover:text-primary">
+                En apprendre advantage sur kibyon
+                </button>
+              </Link>
+      </div>
+      <HSecFour />
     </div>
   );
 };
