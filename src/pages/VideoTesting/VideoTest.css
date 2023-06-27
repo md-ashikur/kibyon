@@ -1,22 +1,4 @@
-.cursor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-  }
-  
-  .cursor1 {
-    background-color: rgb(255, 255, 255);
-    transform: scale(4);
-  }
-  
- 
-  .section1{
-    min-height: 100vh;
-  cursor: none;
 
-  }
-  
- 
-  
+.vid {
+  background-color: tomato;
+}

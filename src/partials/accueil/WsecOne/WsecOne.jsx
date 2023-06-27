@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import planeVideo from "../../../Videos/Plane  trnasparent _ home page 04-23 VF_VP9.webm";
 import mapVideo from "../../../Videos/Maps transparent VF (quick time) 27-04_VP9.webm";
 import "./WsecOne.css";
@@ -7,8 +7,31 @@ import { Suspense } from "react";
 import { Hand } from "../Model/Hand";
 import { Shoes } from "./Shoes";
 import { OrbitControls } from "@react-three/drei";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const WsecOne = () => {
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const videoDivs = gsap.utils.toArray('.vid');
+
+    videoDivs.forEach((videoDiv) => {
+      const videoElem = videoDiv.querySelector('video');
+
+      ScrollTrigger.create({
+        trigger: videoDiv,
+        start: 'top center',
+        end: '+=100%',
+      
+        onEnter: () => videoElem.play(),
+        onEnterBack: () => videoElem.play(),
+        onLeave: () => videoElem.pause(),
+        onLeaveBack: () => videoElem.pause(),
+      });
+    });
+  }, []);
   return (
     <div>
       <div id="shoe" className="relative overflow-x-hidden h-screen flex items-center">
@@ -70,9 +93,13 @@ const WsecOne = () => {
             <div
               
             >
-              <video className="video !h-52 !w-96 object-cover" autoPlay>
-                <source src={planeVideo} type="video/webm" />
-              </video>
+             <div className="flex justify-center items-center">
+             <div className="vid w-96">
+        <video playsInline autoPlay muted loop poster="">
+          <source src={planeVideo} type="video/webm" />
+        </video>
+      </div>
+             </div>
             </div>
           </div>
         </div>
@@ -135,11 +162,13 @@ const WsecOne = () => {
               </p>
             </div>
 
-            <div>
-              <video className="video !h-96 !w-full object-cover " autoPlay>
-                <source src={mapVideo} type="video/mp4" />
-              </video>
-            </div>
+           <div className="flex justify-center items-center">
+           <div className="vid w-96 ">
+          <video playsInline autoPlay muted loop poster="">
+            <source src={mapVideo} type="video/webm" />
+          </video>
+        </div>
+           </div>
           </div>
         </div>
       
