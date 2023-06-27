@@ -68,12 +68,10 @@ const WsecOne = () => {
               </p>
             </div>
             <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-center"
-              data-aos-duration="2000"
+              
             >
               <video className="video !h-52 !w-96 object-cover" autoPlay>
-                <source src={planeVideo} type="video/mp4" />
+                <source src={planeVideo} type="video/webm" />
               </video>
             </div>
           </div>
@@ -83,9 +81,7 @@ const WsecOne = () => {
           <div className="lg:p-20  grid lg:grid-cols-2 h-screen  ">
             <div
               className=""
-              data-aos="fade-right"
-              data-aos-anchor-placement="top-center"
-              data-aos-duration="2000"
+             
             >
               <Canvas
                 camera={{ fov: 60, position: [1, 0, 2] }}

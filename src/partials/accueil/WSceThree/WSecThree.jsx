@@ -13,9 +13,7 @@ const WSecThree = () => {
         <div className="content py-16 z-20">
           <div
             className="text-justify text-base-100 lg:px-20"
-            data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom"
-            
+           
           >
             <p className="-mt-20">
               Tous nos services sont, comme évoqué précédemment, personnalisés
@@ -32,8 +30,7 @@ const WSecThree = () => {
           {/* ===============•	Appear frame 100======2nd part=========================== */}
 
           <div className="mt-[1300px] lg:px-20">
-            <div className="my-10 text-justify text-base-100"   data-aos="fade-right"
-     data-aos-anchor-placement="center-bottom">
+            <div className="my-10 text-justify text-base-100" >
               <p
                 className="my-5"
               
