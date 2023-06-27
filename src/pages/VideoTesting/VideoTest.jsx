@@ -9,6 +9,8 @@ import kibyonText from "../../img/Welcome page/kt.png";
 import kibyonBg from "../../img/Welcome page/Untitled-1.jpg";
 import { Link } from 'react-router-dom';
 import welcomeBg from "../../img/intro welcome page background.png";
+import Header from '../../partials/Header';
+import Footer from '../../components/Footer/Footer';
 
 
 const VideoTest = () => {
@@ -42,6 +44,7 @@ const VideoTest = () => {
 
   return (
     <div>
+       <Header />
  <div className=" relative  overflow-hidden z-20">
         <div className="h-screen w-full -mt-7">
           <img
@@ -133,6 +136,7 @@ const VideoTest = () => {
               </Link>
       </div>
       <HSecFour />
+      <Footer/>
     </div>
   );
 };
