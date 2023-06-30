@@ -96,7 +96,7 @@ const WsecOne = () => {
              <div className="flex justify-center items-center">
              <div className="vid w-96">
         <video playsInline autoPlay muted loop poster="">
-          <source src={planeVideo} type="video/webm" />
+          <source src={planeVideo} type="video/mp4" />
         </video>
       </div>
              </div>
@@ -165,7 +165,7 @@ const WsecOne = () => {
            <div className="flex justify-center items-center">
            <div className="vid w-96 ">
           <video playsInline autoPlay muted loop poster="">
-            <source src={mapVideo} type="video/webm" />
+            <source src={mapVideo} type="video/mp4" />
           </video>
         </div>
            </div>

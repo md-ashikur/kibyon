@@ -20,10 +20,10 @@ const OfferPage = () => {
 
       <section className="z-10 lg:h-screen h-auto bgPic relative grid lg:grid-cols-2 gap-3 lg:px-20 px-5 py-10 text-base-100">
      
-          <div className="flex items-center">
+          <div className="flex items-top my-5">
           <div>
             <h1 className="text-5xl text-center mb-10 font-bold" data-aos="fade-right"  data-aos-duration="1100">Nos offres</h1>
-            <p className="font-light my-4 text-justify z-50" data-aos="fade-right" data-aos-duration="1600">
+            <p className="font-light my-8 text-justify z-50" data-aos="fade-right" data-aos-duration="1600">
               Nos offres sont toutes personnalisées et adaptées à vos projets.
               Avec Kibyon, obtenez le conseil dont vous avez besoin pour tous
               vos projets. Vous découvrirez ci-dessous nos offres de base que
@@ -33,7 +33,7 @@ const OfferPage = () => {
               passant par du coaching et bien d’autres. N’hésitez pas à nous
               contacter pour voir de quelle façon nous pouvons vous aider
             </p>
-            <div className="lg:flex items-center justify-center mt-12 hidden" data-aos-anchor-placement="top-bottom" data-aos="fade-right" data-aos-duration="2500">
+            <div className="lg:flex items-center justify-center mt-20 hidden" data-aos-anchor-placement="top-bottom" data-aos="fade-right" data-aos-duration="2500">
               <Link to="/contact">
                 <button  className="border px-3 py-2 rounded-lg hover:bg-primary hover:scale-105 duration-150">
                   Contactez-nous
@@ -43,7 +43,8 @@ const OfferPage = () => {
           </div>
         </div>
 
-        {/* =====================cards================================= */}
+
+{/* =====================cards================================= */}
 
         <div className="grid lg:grid-rows-2  grid-rows-4 grid-flow-col gap-5 justify-center pt-5 lg:pt-0">
           {/* ================card1======================== */}
@@ -147,7 +148,7 @@ const OfferPage = () => {
           {/* ===================card4================== */}
           <a href="#Unique_offer">
           <div className="relative cardBody" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
-            <h2 className="absolute top-5 left-14 z-10 cardText">
+            <h2 className="absolute top-3 left-14 z-10 cardText">
               Offre unique
             </h2>
             <div class="flip-card ">
@@ -160,7 +161,7 @@ const OfferPage = () => {
                   />
                 </div>
                 <div class="flip-card-back rounded-t-lg bg-primary">
-                  <p className="text-xs mt-10 p-3 text-justify">
+                  <p className="text-xs mt-6 p-3 text-justify">
                     Vous avez besoin d’aide ou souhaitez nous soumettre un
                     projet ? nous pouvons intervenir sur la stratégie et
                     l’organisation d’une entreprise de l’idée à la cession,
@@ -184,8 +185,6 @@ const OfferPage = () => {
               </Link>
             </div>
       </section>
-
-      {/* ***************************Section-1********Nos offres section END************************* */}
 
       
     </div>
