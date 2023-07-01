@@ -5,30 +5,46 @@ import "./Header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbarBackground, setNavbarBackground] = useState("bg-[#000]");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition === 0) {
+        setNavbarBackground("bg-[#000]");
+      } else {
+        setNavbarBackground("bg-[#00000091] backdrop-blur-sm");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-primary text-base-100 sticky top-0 lg:px-10 z-50">
+    <nav className={`${navbarBackground} text-base-100 sticky top-0 lg:px-10 z-50`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center ">
+          <div className="flex items-center">
             <div className="flex-shrink-0">
-            <img src={logo} alt="" className="w-28" />
+              <img src={logo} alt="" className="w-28" />
             </div>
-            
           </div>
           <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-4">
               <NavLink to="/">Accueil</NavLink>
               <NavLink to="/offer">Nos offres</NavLink>
               <NavLink to="/contact">Contact</NavLink>
               <NavLink to="/about">A propos de Kibyon</NavLink>
-              </div>
             </div>
+          </div>
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={toggleMenu}
@@ -46,10 +62,10 @@ const Header = () => {
       </div>
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <NavLink to="/" className="block">Accueil</NavLink>
-              <NavLink to="/offer" className="block">Nos offres</NavLink>
-              <NavLink to="/contact" className="block">Contact</NavLink>
-              <NavLink to="/about" className="block">A propos de Kibyon</NavLink>
+          <NavLink to="/" className="block">Accueil</NavLink>
+          <NavLink to="/offer" className="block">Nos offres</NavLink>
+          <NavLink to="/contact" className="block">Contact</NavLink>
+          <NavLink to="/about" className="block">A propos de Kibyon</NavLink>
         </div>
       </div>
     </nav>
