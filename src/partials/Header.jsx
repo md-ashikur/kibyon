@@ -34,7 +34,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img src={logo} alt="" className="w-28" />
+              <p className='font-[poppins] text-secondary text-2xl'>Kibyon</p>
             </div>
           </div>
           <div className="hidden md:block">
