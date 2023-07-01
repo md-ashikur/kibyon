@@ -1,8 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import vid from "../../../Videos/Market reasearch.mp4";
-import vid2 from "../../../Videos/Prévi VF (2023).mp4";
-import vid3 from "../../../Videos/BP.mp4";
 import "./OSecThree.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

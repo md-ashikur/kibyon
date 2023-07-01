@@ -162,10 +162,42 @@ const OSecFour = () => {
             </p>
           </div>
         </section>
+
+ {/* =============•	Appear frame 1100========4th part=========================== */}
+
+        <section class="offer-sec2-container">
+          <div class="offer-sec2-content fourRevealUp !top-[30%] w-[40%]">
+           
+          <h1 className="text-4xl text-center font-bold text-base-100">
+              Avec Kibyon, gardez un œil sur l’avenir !
+            </h1>
+            <p className="my-5">
+                Il n’est pas toujours aisé de se projeter et de simuler le
+                chiffre d’affaires, les dépenses, les investissements etc que
+                vous aurez à 3 - 5ans. Nous vous proposons des scénarios adaptés
+                et réalistes, basés sur des indicateurs pertinents. L’idée est
+                de vous rendre autonome en vous expliquant les tenants et
+                aboutissants de l’outil que nous développons pour vous. Ainsi,
+                vous serez en mesure de tirer le maximum de bénéfice du
+                prévisionnel financier que nous mettrons à votre disposition et
+                pour lequel vous pourrez réaliser de nouveaux scenarios à cours
+                moyen et long terme. Nous tenons à faire preuve de pédagogie
+                pour vous permettre également d’expliquer les scenarios à de
+                potentiels investisseurs ou établissements financier.
+              </p>
+          </div>
+        </section>
+
         {/* =============•	Appear frame 530==========3rd part================================== */}
 
 
 
+ <div className="mb-20  lg:px-20">
+           
+            <div className="my-10 text-justify text-base-100">
+             
+            </div>
+          </div>
 
         {/* <section class="offer-sec2-container">
           <div class="offer-sec2-content !top-[40%] my-5">

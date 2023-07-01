@@ -25,6 +25,9 @@
   .offer-sec2-container:nth-of-type(5) {
     height: 500px;
   }
+  .offer-sec2-container:nth-of-type(6) {
+    height: 500px;
+  }
   
   .fourRevealUp {
   opacity: 0;

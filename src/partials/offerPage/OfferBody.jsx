@@ -9,6 +9,7 @@ import VideoOnScroll from '../../pages/VideoTesting/VideoOnScroll';
 import Testing from '../../pages/VideoTesting/Testing';
 import OSecThree from './OSection3/OSecThree';
 import OSecFour from './OSection4/OSecFour';
+import OSecFive from './OSection5/OSecFive';
 
 const OfferBody = () => {
     return (
@@ -17,6 +18,7 @@ const OfferBody = () => {
             <OfferHeader/>
         <OSecThree/>
            <OSecFour/>
+           <OSecFive/>
             <OfferSecFive/>
         </div>
     );
