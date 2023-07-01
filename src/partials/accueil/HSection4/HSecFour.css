@@ -50,3 +50,9 @@
 .container:nth-of-type(4) {
     height: 400px;
 }
+.revealUp {
+	opacity: 0;
+	visibility: hidden;
+  }
+
+  

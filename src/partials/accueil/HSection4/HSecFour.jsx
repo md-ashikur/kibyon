@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import homeVideo from "../../../Videos/WP - Section 3 -Services 5.mp4";
 import "./HSecFour.css";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const HSecFour = () => {
   const registerVideo = (boundSelector, videoSelector) => {
@@ -28,12 +31,60 @@ const HSecFour = () => {
     registerVideo("#bound-one", "video");
   }, []);
 
+
+  // text revel effect=======
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+// REVEAL //
+gsap.utils.toArray(".revealUp").forEach(function (elem) {
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top 80%",
+    end: "bottom 30%",
+    // markers: true,
+    onEnter: function () {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeave: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    },
+    onEnterBack: function () {
+      gsap.fromTo(
+        elem,
+        { y: -100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeaveBack: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    }
+  });
+});
+
+  }, []);
+
   return (
     <div className="relative">
       <div className="absolute text-justify top-0 font-semibold z-10 lg:px-20">
         {/* 1st part--------- */}
         <section class="container">
-          <div class="content  !top-[35%] lg:!w-[35%] mt-52">
+          <div class="content revealUp !top-[35%] lg:!w-[35%] mt-52">
             <p className="">
               Tous nos services sont, comme évoqué précédemment, personnalisés
               et conçus sur mesure. Nous nous attachons à proposer des outils et
@@ -52,7 +103,7 @@ const HSecFour = () => {
        {/* 2nd part */}
         {/* ==========•	Appear frame 100==========2nd part================ */}
         <section class="container">
-          <div class="content lg:!w-[35%] !top-[20%]">
+          <div class="content revealUp lg:!w-[35%] !top-[20%]">
             <p className="">
               Les missions sont ponctuées de temps d’échanges et de réflexions
               communes pour que nous nous posions collectivement les bonnes
@@ -75,7 +126,7 @@ const HSecFour = () => {
 
 {/* 3rd part */}
         <section class="container">
-          <div class="content lg:!w-[35%] !top-[20%]">
+          <div class="content revealUp lg:!w-[35%] !top-[20%]">
             <p>
               Nous apportons l’appui de notre réseau pour vous mettre en
               relation au bon moment avec les bons experts (publics et privés),
@@ -96,10 +147,11 @@ const HSecFour = () => {
             </p>
           </div>
         </section>
-{/* 4th part */}
+        {/* 4th part */}
+        
         {/* ========•	Appear frame 350==========3rd part=================== */}
         <section class="container">
-          <div class="content flex justify-center !top-[70%] mt-20">
+          <div class="content revealUp flex justify-center !top-[80%] mt-20">
             <p className="lg:!w-[920px] text-xl">
               Rejoignez la communauté Kibyon et ne soyez plus jamais seul face
               aux défis de l’entreprenariat et plus largement à ceux auxquels

@@ -131,7 +131,7 @@ const AccueilBody = () => {
 
     <div className="bg-primary flex justify-center py-20">
       <Link to="/about">
-        <button className="text-white border p-4 hover:bg-white hover:text-primary">
+        <button className="text-white border px-3 py-2 rounded-lg hover:scale-105 duration-150 hover:bg-white hover:text-primary">
           En apprendre advantage sur kibyon
         </button>
       </Link>
