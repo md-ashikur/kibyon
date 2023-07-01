@@ -17,7 +17,7 @@ const Header = () => {
       if (scrollPosition === 0) {
         setNavbarBackground("bg-[#000]");
       } else {
-        setNavbarBackground("bg-[#00000091] backdrop-blur-sm");
+        setNavbarBackground("bg-[#000000c7] backdrop-blur-sm");
       }
     };
 

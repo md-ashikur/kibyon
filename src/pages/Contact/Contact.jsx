@@ -8,9 +8,9 @@ import Header from "../../partials/Header";
 const Contact = () => {
   
   return (
-    <div className="flex h-screen overflow-hidden">
+   
     
-      <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+      <div>
         <Header  />
         <main>
           <div className="">
@@ -19,7 +19,7 @@ const Contact = () => {
         </main>
         <Footer/>
       </div>
-    </div>
+    
   );
 };
 
