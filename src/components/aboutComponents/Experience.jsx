@@ -46,12 +46,13 @@ export const Experience = () => {
   const textSections = useMemo(() => {
     return [
       {
-        cameraRailDist: -1,
+        cameraRailDist: -2,
         position: new Vector3(
-          curvePoints[1].x - 3,
+          curvePoints[1].x -3,
           curvePoints[1].y,
           curvePoints[1].z,
         ),
+         rotation: new Euler(-Math.PI / 90, -Math.PI / 14, 0),
         title: `
 Pourquoi auriez-vous 
 besoin de conseil en 
@@ -71,6 +72,7 @@ d’améliorations. `,
           curvePoints[1].y + 0.5,
           curvePoints[1].z - 40,
         ),
+        rotation: new Euler(-Math.PI / 95, -Math.PI / 9, 0),
         title: ``,
         subtitle: `
         L’idée est de vous offrir des compétences spécifiques
@@ -82,12 +84,13 @@ d’améliorations. `,
       },
       
       {
-        cameraRailDist: 0,
+        cameraRailDist: 0.5,
         position: new Vector3(
           curvePoints[1].x + 46,
           curvePoints[1].y + 0.6,
           curvePoints[1].z -100,
         ),
+        rotation: new Euler(-Math.PI / 99, -Math.PI / 5, -0.01),
         title: "",
         subtitle: `
        
@@ -102,12 +105,13 @@ d’améliorations. `,
       },
 
       {
-        cameraRailDist: 0,
+        cameraRailDist: 0.5,
         position: new Vector3(
           curvePoints[2].x - 25,
           curvePoints[2].y+ 1,
           curvePoints[2].z + 100,
         ),
+        rotation: new Euler(-Math.PI / 95, -Math.PI / 7, -0.01),
         title: "",
         subtitle: `
        
@@ -121,12 +125,13 @@ d’améliorations. `,
         `,
       },
       {
-        cameraRailDist: 1,
+        cameraRailDist: 1.7,
         position: new Vector3(
-          curvePoints[2].x ,
+          curvePoints[2].x +2,
           curvePoints[2].y + 0.2,
-          curvePoints[2].z ,
+          curvePoints[2].z+ 25,
         ),
+        rotation: new Euler(-Math.PI / 95, Math.PI / 30, 0),
         title: `
 Pourquoi choisir 
 Kibyon ?`,
@@ -143,12 +148,13 @@ création à sa cession.
         `,
       },
       {
-        cameraRailDist: 0,
+        cameraRailDist: 1,
         position: new Vector3(
           curvePoints[2].x - 13,
-          curvePoints[2].y + 1,
+          curvePoints[2].y +0.5,
           curvePoints[2].z - 30,
         ),
+        rotation: new Euler(-Math.PI / 95, Math.PI / 5, 0.02),
         title: "",
         subtitle: `
 Nous sommes animés par vos projets et la vie de votre  
@@ -162,12 +168,13 @@ intérêts soient toujours une priorité.
         `,
       },
       {
-        cameraRailDist: -1,
+        cameraRailDist: 0.5,
         position: new Vector3(
           curvePoints[3].x +153,
-          curvePoints[3].y + 1,
+          curvePoints[3].y + 0.7,
           curvePoints[3].z +180,
         ),
+        rotation: new Euler(-Math.PI / 95, Math.PI / 5, 0.01),
         title: "",
         subtitle: `
 Nous avons décidé de faire du conseil autrement autant 
@@ -180,7 +187,7 @@ possibilités de paiement.
         `,
       },
       {
-        cameraRailDist: -1,
+        cameraRailDist: -1.9,
         position: new Vector3(
           curvePoints[3].x - 3,
           curvePoints[3].y,
@@ -202,12 +209,13 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
       },
      
       {
-        cameraRailDist: 1.5,
+        cameraRailDist: 0.8,
         position: new Vector3(
           curvePoints[4].x - 1,
           curvePoints[4].y + 1,
           curvePoints[4].z 
         ),
+        rotation: new Euler(-Math.PI / 95, -Math.PI / 25, -0.01),
         title: "",
         subtitle: `
         Pour parfaire nos analyses, nous devons aujourd’hui utiliser les 
