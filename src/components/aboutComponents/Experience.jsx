@@ -12,6 +12,7 @@ import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Speed } from "./Speed";
 import { TextSection } from "./TextSection";
+import { Avatar } from "./Leaned_avatar";
 
 
 const LINE_NB_POINTS = 1000;
@@ -709,10 +710,10 @@ solutions ultra-personnalisées, basées sur le besoin et non plus sur l’offre
         </group>
 
         {/* avatar */}
-        <group position-z={-750} position-x={-104.5} position-y={-1}>
+        <group position-z={-750} position-x={-103.3} position-y={-1}>
           <mesh>
             
-             <Avatarlean/>
+             <Avatar/>
             
           </mesh>
         </group>
