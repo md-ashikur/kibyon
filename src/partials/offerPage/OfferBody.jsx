@@ -10,12 +10,13 @@ import Testing from '../../pages/VideoTesting/Testing';
 import OSecThree from './OSection3/OSecThree';
 import OSecFour from './OSection4/OSecFour';
 import OSecFive from './OSection5/OSecFive';
+import OSecTwo from './OSection2/OSecTwo';
 
 const OfferBody = () => {
     return (
         <div>
              <OfferPage/>
-            <OfferHeader/>
+            <OSecTwo/>
         <OSecThree/>
            <OSecFour/>
            <OSecFive/>
