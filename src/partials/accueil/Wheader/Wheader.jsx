@@ -29,7 +29,7 @@ const Wheader = () => {
               <pointLight position={[3, 10, 3]} />
 
               <Shoes
-                position={[-17, -7, -10]}
+                position={[-17, 2, -10]}
                 rotation={[-0.2, 1, 0]}
                 scale={0.6}
                
@@ -37,7 +37,7 @@ const Wheader = () => {
               />
 
               <Plane
-                position={[4, -4, 0]}
+                position={[4, -3, 0]}
                 rotation={[0.1, 0.2, 0]}
                 scale={4}
                 onClick={() => (window.location.href = "#plane")}
@@ -48,15 +48,15 @@ const Wheader = () => {
               <Hand
                 scale={1.2}
                 className=""
-                position={[4, -4.5, 6]}
+                position={[4, -3, 6]}
                 rotation={[2, -2.1, 2]}
                 onClick={() => (window.location.href = "#hand")}
               />
 
               <Maps
-                position={[11, -4.5, 3]}
+                position={[11, 2, 3]}
                 scale={1.3}
-                rotation={[-0.3, -2, -0.2]}
+                rotation={[-0.3, 4.3, -0.8]}
                 onClick={() => (window.location.href = "#map")}
               />
             </Suspense>
