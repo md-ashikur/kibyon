@@ -20,7 +20,7 @@ export function Shoes(props) {
 
   useEffect(() => {
     const tween = gsap.to(shoeRef.current.position, {
-      y: '3',
+      y: '1',
       yoyo: true,
       repeat: -1,
       duration: 3,
@@ -41,15 +41,15 @@ export function Shoes(props) {
 
   const handleMouseEnter = () => {
     gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.8, y: 0.8, z: 0.8 });
-    gsap.to(shoeRef.current.rotation, { duration: 0.2, x: -0.2, y: 0, z: 0 });
-    gsap.to(shoeRef.current.position, { duration: 0.2, x: -15, y: -7, z: -10 });
+   
+   
     setShowText(true);
   };
 
   const handleMouseLeave = () => {
     gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.6, y: 0.6, z: 0.6 });
-    gsap.to(shoeRef.current.rotation, { duration: 0.2, x: -0.1, y: -0.2, z: 0 });
-    gsap.to(shoeRef.current.position, { duration: 0.2, x: -17, y: -7, z: -10 });
+    
+   
 
     setShowText(false);
   };
@@ -116,7 +116,7 @@ export function Shoes(props) {
         <mesh
           geometry={nodes.Aviators_Glass_tinted_0001.geometry}
           material={materials.Glass_tinted}
-        />
+        ></mesh>
         <mesh
           geometry={nodes.Aviators_Gold_metallic_0001.geometry}
           material={materials.Gold_metallic}

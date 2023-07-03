@@ -7,7 +7,6 @@ import { Euler, Group, Vector3 } from "three";
 import { usePlay } from "../../contexts/Play";
 import { fadeOnBeforeCompile } from "../../utils/fadeMaterial";
 import { Airplane } from "./Plane";
-import { Avatarlean } from "./Avatarlean";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Speed } from "./Speed";

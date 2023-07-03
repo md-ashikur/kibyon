@@ -9,6 +9,7 @@ import { Shoes } from "./Shoes";
 import { OrbitControls } from "@react-three/drei";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { HandModel } from "../Model/HandModel";
 
 const WsecOne = () => {
 

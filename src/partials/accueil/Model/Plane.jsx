@@ -14,7 +14,7 @@ export function Plane(props) {
 
   useEffect(() => {
     const tween = gsap.to(planeRef.current.position, {
-      y: "+=0.6",
+      y: "+=1",
      
       yoyo: true,
       repeat: -1,
@@ -60,7 +60,7 @@ export function Plane(props) {
             geometry={nodes.Jet_Flame_mesh_Icosphere.geometry}
             material={
               new MeshBasicMaterial({
-                color: new Color("gold"),
+                color: new Color("white"),
                 side: DoubleSide,
                 emissive: new Color("gold"),
                 emissiveIntensity: 1,
@@ -76,7 +76,7 @@ export function Plane(props) {
             geometry={nodes.Jet_Flame_mesh_Icosphere001.geometry}
             material={
               new MeshBasicMaterial({
-                color: new Color("gold"),
+                color: new Color("white"),
                 side: DoubleSide,
                 emissive: new Color("gold"),
                 emissiveIntensity: 1,
@@ -93,7 +93,7 @@ export function Plane(props) {
           position={[-2.6, 0.22, 0.79]}
           rotation={[Math.PI / 2, 0, -1.57]}
           scale={0.2}
-        />
+        ><meshStandardMaterial color="#fff" /></mesh>
         <mesh
           name="Text"
           geometry={nodes.Text.geometry}

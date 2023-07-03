@@ -10,12 +10,9 @@ export function Maps(props) {
 
     const mapRef = useRef();
 
-    
-
-
   useEffect(() => {
     const tween = gsap.to(mapRef.current.position, {
-      y: '3',
+      y: '2',
       
       yoyo: true,
       repeat: -1,

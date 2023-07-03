@@ -9,6 +9,7 @@ import { Suspense } from 'react';
 import "./Wheader.css";
 import { useRef } from 'react';
 import { useEffect } from 'react';
+import { HandModel } from '../Model/HandModel';
 
 
 const Wheader = () => {
@@ -29,7 +30,7 @@ const Wheader = () => {
               <pointLight position={[3, 10, 3]} />
 
               <Shoes
-                position={[-17, 2, -10]}
+                position={[-13, 2, -10]}
                 rotation={[-0.2, 1, 0]}
                 scale={0.6}
                
@@ -37,7 +38,7 @@ const Wheader = () => {
               />
 
               <Plane
-                position={[4, -3, 0]}
+                position={[6, -3, 0]}
                 rotation={[0.1, 0.2, 0]}
                 scale={4}
                 onClick={() => (window.location.href = "#plane")}
@@ -45,16 +46,16 @@ const Wheader = () => {
 
               <Logo  position={[0, -4.2, 0]} scale={0.6} />
 
-              <Hand
+              <HandModel
                 scale={1.2}
                 className=""
-                position={[4, -3, 6]}
-                rotation={[2, -2.1, 2]}
+                position={[4, -2, 6]}
+                rotation={[2.8, -2.5, 3.5]}
                 onClick={() => (window.location.href = "#hand")}
               />
 
               <Maps
-                position={[11, 2, 3]}
+                position={[9, 1, 3]}
                 scale={1.3}
                 rotation={[-0.3, 4.3, -0.8]}
                 onClick={() => (window.location.href = "#map")}
