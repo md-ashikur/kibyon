@@ -38,18 +38,18 @@ const Wheader = () => {
               />
 
               <Plane
-                position={[6, -3, 0]}
+                position={[7, -3, 0]}
                 rotation={[0.1, 0.2, 0]}
                 scale={4}
                 onClick={() => (window.location.href = "#plane")}
               />
 
-              <Logo  position={[0, -4.2, 0]} scale={0.6} />
+              {/* <Logo  position={[0, -4.2, 0]} scale={0.6} /> */}
 
               <HandModel
                 scale={1.2}
                 className=""
-                position={[4, -2, 6]}
+                position={[3, -2, 6]}
                 rotation={[2.8, -2.5, 3.5]}
                 onClick={() => (window.location.href = "#hand")}
               />

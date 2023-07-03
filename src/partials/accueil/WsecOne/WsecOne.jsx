@@ -76,8 +76,8 @@ const WsecOne = () => {
         </div>
         </div>
         {/* plane---------- */}
-        <div id="plane" className="relative h-screen flex items-center bg-[#0120aa]">
-          <div className="grid lg:grid-cols-2 lg:p-20 text-white">
+        <div id="plane" className="relative h-screen flex items-center ">
+          <div className="grid lg:grid-cols-2 lg:p-20 ">
             <div>
               <h2 className="text-3xl font-semibold my-10">
                 Et si on avançait ensemble ?
@@ -105,7 +105,7 @@ const WsecOne = () => {
           </div>
         </div>
         {/* hand--------------------- */}
-        <div id="hand" className="relative overflow-hidden flex items-center">
+        <div id="hand" className="relative bg-[#0120aa] overflow-hidden flex items-end">
           <div className="lg:p-20  grid lg:grid-cols-2 h-screen  ">
             <div
               className=""
@@ -128,7 +128,7 @@ const WsecOne = () => {
                 </Suspense>
               </Canvas>
             </div>
-            <div className="p-5">
+            <div className="p-5 text-white ">
               <h2 className="lg:text-3xl text-2xl font-semibold my-10">
                 Un conseil personnalisé et adapté
               </h2>
