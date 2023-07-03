@@ -50,7 +50,7 @@ const AccueilBody = () => {
   return (
     <div>
     <Header />
-    <div className=" relative  overflow-hidden z-20">
+    <div className=" relative overflow-hidden z-20">
       <div className="h-screen w-full -mt-7">
         <img
           src={welcomeBg}
@@ -58,6 +58,10 @@ const AccueilBody = () => {
           draggable={false}
           className="object-cover lg:object-none h-full lg:h-screen lg:w-full"
         />
+      </div>
+
+      <div className="absolute top-10 left-[38%] text-8xl text-[#0120aa] opacity-50 font-black">
+        <h1 className="">KIBYON</h1>
       </div>
 
       <div className="absolute top-2 ">
