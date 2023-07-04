@@ -5,11 +5,11 @@ import "./WsecOne.css";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Hand } from "../Model/Hand";
-import { Shoes } from "./Shoes";
+import { ShoeSec } from "./ShoeSec";
 import { OrbitControls } from "@react-three/drei";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { HandModel } from "../Model/HandModel";
+import Wave from "react-wavify";
 
 const WsecOne = () => {
 
@@ -35,34 +35,28 @@ const WsecOne = () => {
   }, []);
   return (
     <div>
-      <div id="shoe" className="relative overflow-x-hidden h-screen flex items-center">
-        <div className="lg:px-20 grid lg:grid-cols-2 ">
+      <div id="shoe" className="relative overflow-hidden  ">
+        <div className="lg:px-20 items-center grid lg:grid-cols-2 h-screen">
           {/* shoe block----- */}
-          <div>
-            {/* <Canvas
-              className="mt-28"
-              camera={{ fov: 70, position: [1, 2, 2] }}
+          <div className="flex justify-center">
+            <Canvas
+              className="mt-2 !h-[350px] !w-[400px]"
+              camera={{ fov: 50, position: [0, 0, 20] }}
             >
               <Suspense fallback={null}>
-                <ambientLight />
-                <directionalLight position={[3, 10, 3]} />
-                <pointLight position={[-2, 2, -1]} />
-                <OrbitControls
-                  enableZoom={false}
-                  maxAzimuthAngle={0}
-                  minAzimuthAngle={0}
-                  maxPolarAngle={0}
-                  minPolarAngle={1}
-                />
-                <Shoes
-                  position={[0, 0.5, 0]}
-                  rotation={[-0.2, 1, 0]}
-                  scale={0.15}
+              <ambientLight />
+                  <directionalLight position={[3, 10, 6]} />
+                  <pointLight position={[3, 10, 6]} />
+
+                <ShoeSec
+                 position={[Math.PI/ 0.8, -1, 2]}
+                 rotation={[0, 0.8, 0.2]}
+                 scale={Math.PI/2.7}
                 />
               </Suspense>
-            </Canvas> */}
+            </Canvas>
           </div>
-          <div>
+          <div className="p-5">
             <h2 className="text-3xl font-semibold my-10">
               Choisir Kibyon, c’est oser avancer.
             </h2>
@@ -105,9 +99,20 @@ const WsecOne = () => {
           </div>
         </div>
 
-        
+        <Wave fill='#0120aa'
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 20,
+          speed: 0.15,
+          points: 3
+        }}
+        className="-mt-20 z-20"
+  />
+       
         {/* hand--------------------- */}
-        <div id="hand" className="relative bg-[#0120aa] overflow-hidden flex items-end">
+        <div id="hand" className="relative bg-[#0120aa] overflow-hidden -mt-10 flex items-end">
+       
           <div className="lg:p-20  grid lg:grid-cols-2 h-screen  ">
             <div
               className=""

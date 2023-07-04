@@ -48,7 +48,7 @@ function App() {
         <Route path="/test" element={<VideoOnScroll />} />
         <Route path="/t" element={<OSecThree />} />
         <Route path="/tt" element={<HSecFour />} />
-        <Route path="/h" element={<OSecTwo />} />
+        <Route path="/h" element={<HSecTwo />} />
 
        
        

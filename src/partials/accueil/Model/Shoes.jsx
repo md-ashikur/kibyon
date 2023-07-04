@@ -95,13 +95,13 @@ export function Shoes(props) {
             material={materials.shoe}
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
-          ><meshStandardMaterial color="#fff" /></mesh>
+          />
           <mesh
             geometry={nodes.shoelace_shoelace_0.geometry}
             material={materials.shoelace}
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
-          ><meshStandardMaterial color="#F2F3F4" /></mesh>
+          ></mesh>
         </group>
       </group>
       <group
@@ -132,7 +132,7 @@ export function Shoes(props) {
       </group>
       
     </group>
-    {showText &&<Text position={[-14, -6, 0]} rotation={[0, 0, 0]} scale={[1, 1, 1]} fontSize={.5} font={'Arial'}>
+    {showText &&<Text position={[-13, 0, 0]} rotation={[0, 0, 0]} scale={[1, 1, 1]} fontSize={.5} font={'Arial'}>
       Choisir Kibyon, c’est oser avancer
 </Text>}
     </>

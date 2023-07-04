@@ -41,7 +41,7 @@ const HSecTwo = () => {
   
       <div id="bound-one" className="scroll-bound">
         <div className="content">
-          <video className="object-cover !w-full" muted preload>
+          <video className="object-cover w-96" muted preload>
             <source src={pl} type="video/webm" />
             <p>Your user agent does not support the HTML5 Video element.</p>
           </video>

@@ -14,7 +14,7 @@ export function Plane(props) {
 
   useEffect(() => {
     const tween = gsap.to(planeRef.current.position, {
-      y: "+=1",
+      y: "-2",
      
       yoyo: true,
       repeat: -1,
@@ -107,7 +107,7 @@ export function Plane(props) {
     </group>
     {showText && (
         <Text
-          position={[-6, -5, 2]}
+          position={[-4, -3.5, 2]}
           rotation={[0, 0, 0]}
           scale={[1, 1, 1]}
           fontSize={0.5}

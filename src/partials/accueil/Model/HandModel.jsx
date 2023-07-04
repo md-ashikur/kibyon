@@ -4,7 +4,7 @@ Command: npx gltfjsx@6.2.5 ./public/models/hand.glb
 */
 
 import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useGLTF, useAnimations, Text } from '@react-three/drei'
 import gsap from "gsap";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -79,7 +79,9 @@ export function HandModel(props) {
         </group>
       </group>
     </group>
-    
+    {showText &&<Text position={[4, -5, 0]} rotation={[0, 0, 0]} scale={[Math.PI / 3, Math.PI / 3, Math.PI / 3]} fontSize={.5} font={'Arial'}>
+    Un conseil personnalisé et adapté
+</Text>}
    </>
   )
 }

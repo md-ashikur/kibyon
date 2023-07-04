@@ -55,7 +55,7 @@ export function Maps(props) {
           material={nodes.Plane.material}
           rotation={[0, -0.09, 0]}
           scale={0.97}
-        ><meshStandardMaterial color="#fff" /></mesh>
+        ></mesh>
         <mesh
           geometry={nodes.Plane001.geometry}
           material={nodes.Plane001.material}
@@ -91,11 +91,11 @@ export function Maps(props) {
             <mesh
               geometry={nodes.Plane005_1.geometry}
               material={materials.Building}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Plane005_2.geometry}
               material={materials.Window}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
           </group>
           <mesh
             geometry={nodes.Plane005.geometry}
@@ -113,7 +113,7 @@ export function Maps(props) {
             <mesh
               geometry={nodes.Circle001_1.geometry}
               material={materials.Building}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Circle001_2.geometry}
               material={materials.Window}
@@ -136,7 +136,7 @@ export function Maps(props) {
             <mesh
               geometry={nodes.Plane008_1.geometry}
               material={materials.Building}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Plane008_2.geometry}
               material={materials.Window}
@@ -159,7 +159,7 @@ export function Maps(props) {
             <mesh
               geometry={nodes.Plane011_1.geometry}
               material={materials.Building}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Plane011_2.geometry}
               material={materials.Window}
@@ -181,7 +181,7 @@ export function Maps(props) {
             <mesh
               geometry={nodes.Circle005_1.geometry}
               material={materials.Building}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Circle005_2.geometry}
               material={materials.Window}
@@ -203,7 +203,7 @@ export function Maps(props) {
             <mesh
               geometry={nodes.Circle008_1.geometry}
               material={materials.Building}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Circle008_2.geometry}
               material={materials.Window}
@@ -225,7 +225,7 @@ export function Maps(props) {
             <mesh
               geometry={nodes.Plane021.geometry}
               material={materials.Building}
-            ><meshStandardMaterial color="#fff" /></mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Plane021_1.geometry}
               material={materials.Window}
@@ -409,7 +409,7 @@ export function Maps(props) {
 
       </group>
       
-{showText &&<Text position={[13, -6, 0]} rotation={[0, 0, 0]} scale={[1, 1, 1]} fontSize={.5} font={'Arial'}>
+{showText &&<Text position={[11, -0.5, 0]} rotation={[0, 0, 0]} scale={[Math.PI / 3, Math.PI / 3, Math.PI / 3]} fontSize={.5} font={'Arial'}>
 Pour répondre à vos besoins
 </Text>}
       </>
