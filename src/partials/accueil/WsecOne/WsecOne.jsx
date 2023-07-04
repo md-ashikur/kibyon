@@ -104,6 +104,8 @@ const WsecOne = () => {
             </div>
           </div>
         </div>
+
+        
         {/* hand--------------------- */}
         <div id="hand" className="relative bg-[#0120aa] overflow-hidden flex items-end">
           <div className="lg:p-20  grid lg:grid-cols-2 h-screen  ">

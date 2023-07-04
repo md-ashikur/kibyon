@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 import { useEffect } from "react";
 import Header from "../Header";
 import Footer from "../../components/Footer/Footer";
+import Wave from "react-wavify";
 
 const AccueilBody = () => {
 
@@ -51,6 +52,7 @@ const AccueilBody = () => {
     <div>
     <Header />
     <div className=" relative overflow-hidden z-20">
+     
       <div className="h-screen w-full -mt-7">
         <img
           src={welcomeBg}
@@ -67,7 +69,18 @@ const AccueilBody = () => {
       <div className="absolute top-2 ">
         <Wheader />
       </div>
+      <Wave fill='#f1f5f9'
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 20,
+          speed: 0.15,
+          points: 3
+        }}
+        className="-mt-20 z-20"
+  />
     </div>
+   
     <WsecOne />
 
     {/* Section 1 */}
