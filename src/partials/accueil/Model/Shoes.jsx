@@ -95,13 +95,13 @@ export function Shoes(props) {
             material={materials.shoe}
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
-          />
+          ><meshStandardMaterial color="#fff" /></mesh>
           <mesh
             geometry={nodes.shoelace_shoelace_0.geometry}
             material={materials.shoelace}
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
-          />
+          ><meshStandardMaterial color="#F2F3F4" /></mesh>
         </group>
       </group>
       <group

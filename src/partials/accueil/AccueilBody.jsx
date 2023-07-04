@@ -60,8 +60,8 @@ const AccueilBody = () => {
         />
       </div>
 
-      <div className="absolute top-10 left-[38%] text-8xl text-[#0120aa] opacity-50 font-black">
-        <h1 className="">KIBYON</h1>
+      <div className="flex justify-center text-8xl text-[#0120aa] opacity-50 font-black">
+        <h1 className="absolute top-10 left-[37%]">KIBYON</h1>
       </div>
 
       <div className="absolute top-2 ">
