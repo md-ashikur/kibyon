@@ -1,0 +1,11 @@
+.all_models:hover .model{
+filter: blur(3px);
+
+}
+.all_models .model:hover{
+filter: blur(0px);
+transform: scale(1.5, 1.5);
+z-index: 10;
+
+}
+

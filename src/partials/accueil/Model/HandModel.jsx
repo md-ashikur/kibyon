@@ -40,13 +40,13 @@ export function HandModel(props) {
   const [showText, setShowText] = useState(false);
 
   const handleMouseEnter = () => {
-    gsap.to(handref.current.scale, { duration: 0.2, x: 1.7, y: 1.7, z: 1.7 });
+   // gsap.to(handref.current.scale, { duration: 0.2, x: 1.7, y: 1.7, z: 1.7 });
 
     setShowText(true);
   };
 
   const handleMouseLeave = () => {
-    gsap.to(handref.current.scale, { duration: 0.2, x: 1.3, y: 1.3, z: 1.3 });
+    //gsap.to(handref.current.scale, { duration: 0.2, x: 1.3, y: 1.3, z: 1.3 });
 
     setShowText(false);
   };

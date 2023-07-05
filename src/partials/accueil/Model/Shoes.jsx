@@ -12,11 +12,11 @@ export function Shoes(props) {
   const shoeRef = useRef();
   const tl = useRef();
 
-  useFrame(({ mouse, viewport }) => {
-    const x = (mouse.x * viewport.width) / 3.5;
-    const y = (mouse.y * viewport.height) / 3.5;
-    shoeRef.current.lookAt(x, y, 1);
-  });
+  // useFrame(({ mouse, viewport }) => {
+  //   const x = (mouse.x * viewport.width) / 3.5;
+  //   const y = (mouse.y * viewport.height) / 3.5;
+  //   shoeRef.current.lookAt(x, y, 1);
+  // });
 
   useEffect(() => {
     const tween = gsap.to(shoeRef.current.position, {
@@ -40,14 +40,14 @@ export function Shoes(props) {
   const [showText, setShowText] = useState(false);
 
   const handleMouseEnter = () => {
-    gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.8, y: 0.8, z: 0.8 });
+    // gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.8, y: 0.8, z: 0.8 });
    
    
     setShowText(true);
   };
 
   const handleMouseLeave = () => {
-    gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.6, y: 0.6, z: 0.6 });
+    // gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.6, y: 0.6, z: 0.6 });
     
    
 

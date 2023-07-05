@@ -32,13 +32,13 @@ export function Maps(props) {
   const [showText, setShowText] = useState(false);
 
   const handleMouseEnter = () => {
-    gsap.to(mapRef.current.scale, { duration: 0.2, x: 1.7, y: 1.7, z: 1.7 });
+    //gsap.to(mapRef.current.scale, { duration: 0.2, x: 1.7, y: 1.7, z: 1.7 });
 
     setShowText(true);
   };
 
   const handleMouseLeave = () => {
-    gsap.to(mapRef.current.scale, { duration: 0.2, x: 1.3, y: 1.3, z: 1.3 });
+    //gsap.to(mapRef.current.scale, { duration: 0.2, x: 1.3, y: 1.3, z: 1.3 });
 
     setShowText(false);
   };

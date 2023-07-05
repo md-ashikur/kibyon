@@ -33,13 +33,13 @@ export function Plane(props) {
   const [showText, setShowText] = useState(false);
 
   const handleMouseEnter = () => {
-    gsap.to(planeRef.current.scale, { duration: 0.2, x: 4, y: 6, z:6 });
+    // gsap.to(planeRef.current.scale, { duration: 0.2, x: 4, y: 6, z:6 });
 
     setShowText(true);
   };
 
   const handleMouseLeave = () => {
-    gsap.to(planeRef.current.scale, { duration: 0.2, x: 4, y: 4, z: 4 });
+    // gsap.to(planeRef.current.scale, { duration: 0.2, x: 4, y: 4, z: 4 });
 
     setShowText(false);
   };

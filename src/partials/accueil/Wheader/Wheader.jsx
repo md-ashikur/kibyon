@@ -16,7 +16,7 @@ const Wheader = () => {
 
     
     return (
-        <div className='relative'>
+        <div className='relative '>
              <Canvas
             camera={{ fov: 50, position: [0, 0, 20] }}
             className=" absolute bottom-0 !w-screen !h-screen z-1 "
@@ -33,7 +33,6 @@ const Wheader = () => {
                 position={[-13, 2, -10]}
                 rotation={[-0.2, 1, 0]}
                 scale={0.6}
-               
                 onClick={() => (window.location.href = "#shoe")}
               />
 

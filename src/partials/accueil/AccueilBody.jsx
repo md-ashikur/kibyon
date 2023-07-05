@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import Header from "../Header";
 import Footer from "../../components/Footer/Footer";
 import Wave from "react-wavify";
+import HSecOne from "./HSection1/HSecOne";
 
 const AccueilBody = () => {
   // section 3------------
@@ -61,8 +62,8 @@ const AccueilBody = () => {
           <h1 className="lg:-mt-[40%] -mt-[170%] z-50">KIBYON</h1>
         </div>
 
-        <div className="absolute top-2 ">
-          <Wheader />
+        <div className="absolute top-1 ">
+          <HSecOne />
         </div>
         <Wave
           fill="#f1f5f9"
