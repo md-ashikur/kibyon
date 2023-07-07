@@ -37,23 +37,10 @@ export function HandModel(props) {
    
   });
 
-  const [showText, setShowText] = useState(false);
-
-  const handleMouseEnter = () => {
-   // gsap.to(handref.current.scale, { duration: 0.2, x: 1.7, y: 1.7, z: 1.7 });
-
-    setShowText(true);
-  };
-
-  const handleMouseLeave = () => {
-    //gsap.to(handref.current.scale, { duration: 0.2, x: 1.3, y: 1.3, z: 1.3 });
-
-    setShowText(false);
-  };
-
+ 
   return (
    <>
-    <group ref={handref} {...props} dispose={null} onPointerEnter={handleMouseEnter} onPointerLeave={handleMouseLeave}>
+    <group ref={handref} {...props} dispose={null} >
       <group name="Scene">
         <group name="Armature">
        
@@ -79,9 +66,7 @@ export function HandModel(props) {
         </group>
       </group>
     </group>
-    {showText &&<Text position={[4, -5, 0]} rotation={[0, 0, 0]} scale={[Math.PI / 3, Math.PI / 3, Math.PI / 3]} fontSize={.5} font={'Arial'}>
-    Un conseil personnalisé et adapté
-</Text>}
+   
    </>
   )
 }

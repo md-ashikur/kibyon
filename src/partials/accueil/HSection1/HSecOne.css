@@ -1,11 +1,36 @@
-.all_models:hover .model{
-filter: blur(3px);
 
+.all_models:hover .model{
+
+transition: 0.5s ease-in-out;
 }
 .all_models .model:hover{
-filter: blur(0px);
-transform: scale(1.5, 1.5);
+
+transform: scale(1.5);
 z-index: 10;
 
 }
+.shoeText{
+    display: none;
+}
+.shoeModel:hover + .shoeText{
+    display: block;
+}
+.planeText{
+    display: none;
+}
+.planeModel:hover + .planeText{
+    display: block;
+}
+.handText{
+    display: none;
+}
+.handModel:hover + .handText{
+    display: block;
+}
+.mapText{
+    display: none;
 
+}
+.mapModel:hover + .mapText{
+    display: block;
+}

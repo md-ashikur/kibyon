@@ -37,27 +37,11 @@ export function Shoes(props) {
   });
 
   
-  const [showText, setShowText] = useState(false);
-
-  const handleMouseEnter = () => {
-    // gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.8, y: 0.8, z: 0.8 });
-   
-   
-    setShowText(true);
-  };
-
-  const handleMouseLeave = () => {
-    // gsap.to(shoeRef.current.scale, { duration: 0.2, x: 0.6, y: 0.6, z: 0.6 });
-    
-   
-
-    setShowText(false);
-  };
-
+  
   
   return (
     <>
-    <group ref={shoeRef} {...props} dispose={null} onPointerEnter={handleMouseEnter} onPointerLeave={handleMouseLeave}>
+    <group ref={shoeRef} {...props} dispose={null}>
       <group
         position={[-3.6, 2.24, 1.1]}
         rotation={[-Math.PI / 2, 0, 0.32]}
@@ -132,9 +116,7 @@ export function Shoes(props) {
       </group>
       
     </group>
-    {showText &&<Text position={[-13, 0, 0]} rotation={[0, 0, 0]} scale={[1, 1, 1]} fontSize={.5} font={'Arial'}>
-      Choisir Kibyon, c’est oser avancer
-</Text>}
+   
     </>
   );
 }

@@ -29,26 +29,12 @@ export function Maps(props) {
    
   });
 
-  const [showText, setShowText] = useState(false);
-
-  const handleMouseEnter = () => {
-    //gsap.to(mapRef.current.scale, { duration: 0.2, x: 1.7, y: 1.7, z: 1.7 });
-
-    setShowText(true);
-  };
-
-  const handleMouseLeave = () => {
-    //gsap.to(mapRef.current.scale, { duration: 0.2, x: 1.3, y: 1.3, z: 1.3 });
-
-    setShowText(false);
-  };
+  
 
     return (
     
       <>
-       <group {...props} dispose={null} ref={mapRef}  
-       onPointerEnter={handleMouseEnter}
-       onPointerLeave={handleMouseLeave}>
+       <group {...props} dispose={null} ref={mapRef} >
         <mesh
         
           geometry={nodes.Plane.geometry}
@@ -409,9 +395,7 @@ export function Maps(props) {
 
       </group>
       
-{showText &&<Text position={[11, -0.5, 0]} rotation={[0, 0, 0]} scale={[Math.PI / 3, Math.PI / 3, Math.PI / 3]} fontSize={.5} font={'Arial'}>
-Pour répondre à vos besoins
-</Text>}
+
       </>
       
     

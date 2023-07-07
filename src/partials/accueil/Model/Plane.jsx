@@ -30,19 +30,8 @@ export function Plane(props) {
     // Update any other animations here
   });
 
-  const [showText, setShowText] = useState(false);
-
-  const handleMouseEnter = () => {
-    // gsap.to(planeRef.current.scale, { duration: 0.2, x: 4, y: 6, z:6 });
-
-    setShowText(true);
-  };
-
-  const handleMouseLeave = () => {
-    // gsap.to(planeRef.current.scale, { duration: 0.2, x: 4, y: 4, z: 4 });
-
-    setShowText(false);
-  };
+ 
+  
 
   return (
    <>
@@ -50,8 +39,7 @@ export function Plane(props) {
       ref={planeRef}
       {...props}
       dispose={null}
-      onPointerEnter={handleMouseEnter}
-      onPointerLeave={handleMouseLeave}
+     
     >
       <group ref={planeRef} name="Studio_limbo_3_point_lighting_2x2x2">
         <group name="Jet_03" position={[3.4, -5.76, -51.38]}>
@@ -105,17 +93,7 @@ export function Plane(props) {
       </group>
      
     </group>
-    {showText && (
-        <Text
-          position={[-4, -3.5, 2]}
-          rotation={[0, 0, 0]}
-          scale={[1, 1, 1]}
-          fontSize={0.5}
-          font={"Arial"}
-        >
-          Et si on avançait ensemble ?
-        </Text>
-      )}
+   
    </>
   );
 }

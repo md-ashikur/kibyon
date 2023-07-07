@@ -1,11 +1,6 @@
 import React from "react";
-import WsecOne from "./WsecOne/WsecOne";
-import WSecTwo from "./WelcomeSecTwo/WSecTwo";
-import WSecThree from "./WSceThree/WSecThree";
-import Wheader from "./Wheader/Wheader";
 import welcomeBg from "../../img/intro welcome page background.png";
 import HSecFour from "./HSection4/HSecFour";
-import VideoTest from "../../pages/VideoTesting/VideoTest";
 import "./AccueilBody.css";
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 import kibyonText from "../../img/Welcome page/kt.png";
@@ -14,8 +9,9 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "../Header";
 import Footer from "../../components/Footer/Footer";
-import Wave from "react-wavify";
 import HSecOne from "./HSection1/HSecOne";
+import HSecTwo from "./HSection2/HSecTwo";
+
 
 const AccueilBody = () => {
   // section 3------------
@@ -65,35 +61,75 @@ const AccueilBody = () => {
         <div className="absolute top-1 ">
           <HSecOne />
         </div>
-        <Wave
+
+    {/* wave-1----------------- */}
+    <div className="-mt-20">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        width="2000"  // Increase the width value here
+        height="85"
+      >
+        <defs>
+          <path
+            id="wave"
+            d="m-115,50q38-30 75,0t75,0 75,0 75,0
+    75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0
+    v20 h-1540 v-20"
+          />
+          <clipPath id="wave-clip-front">
+            <use className="wave wave-front" xlinkHref="#wave" />
+            <rect x="0" y="70" width="100%" height="100%" />
+          </clipPath>
+          <rect id="clipped-wave" x="0" y="0" width="100%" height="100%" />
+        </defs>
+
+        <use
+          xlinkHref="#clipped-wave"
+          clipPath="url(#wave-clip-front)"
           fill="#f1f5f9"
-          paused={false}
-          options={{
-            height: 20,
-            amplitude: 20,
-            speed: 0.15,
-            points: 3,
-          }}
-          className="-mt-20 z-20"
+          fillOpacity="1"
         />
+      </svg>
+    </div>
+    {/* wave end-------------------- */}
+
       </div>
+     <HSecTwo/>
+ {/* wave-1----------------- */}
+ <div className="-mt-20 bg-[#0120aa] z-100 relative">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        width="2000"  // Increase the width value here
+        height="85"
+      >
+        <defs>
+          <path
+            id="wave"
+            d="m-115,50q38-30 75,0t75,0 75,0 75,0
+    75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0
+    v20 h-1540 v-20"
+          />
+          <clipPath id="wave-clip-front">
+            <use className="wave wave-front" xlinkHref="#wave" />
+            <rect x="0" y="70" width="100%" height="100%" />
+          </clipPath>
+          <rect id="clipped-wave" x="0" y="0" width="100%" height="100%" />
+        </defs>
 
-      <WsecOne />
-
-      <Wave
-        fill="#000"
-        paused={false}
-        options={{
-          height: 20,
-          amplitude: 20,
-          speed: 0.15,
-          points: 3,
-        }}
-        className=" z-50 bg-[#0120aa]"
-      />
-
+        <use
+          xlinkHref="#clipped-wave"
+          clipPath="url(#wave-clip-front)"
+          fill="#000"
+          fillOpacity="1"
+        />
+      </svg>
+    </div>
+    {/* wave end-------------------- */}
       {/* Section 3 */}
-      <section className="section1 bg-primary -mt-10">
+      <section className="section1 bg-primary ">
+ 
         <div className="h-auto w-full text-white ">
           <h1 className="text-3xl font-bold text-center px-20 py-28">
            
@@ -110,7 +146,7 @@ const AccueilBody = () => {
               </div>
             </ParallaxBanner>
           </ParallaxProvider>
-          <div className=" grid lg:grid-rows-2 gap-8 text-justify bg-primary px-20 text-base-100">
+          <div className=" grid lg:grid-rows-2 gap-8 text-justify bg-primary lg:px-20 text-base-100">
             <div className="grid  lg:grid-cols-2 gap-5">
               <p className="p-5">
                 Ce qui nous anime et ce qui fait l’ADN de ce cabinet, c’est
