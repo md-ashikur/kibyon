@@ -63,7 +63,7 @@ const AccueilBody = () => {
         </div>
 
     {/* wave-1----------------- */}
-    <div className="-mt-20">
+    <div className="-mt-16">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
