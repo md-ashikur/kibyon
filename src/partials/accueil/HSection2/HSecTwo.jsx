@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import planeVideo from "../../../Videos/Plane  trnasparent _ home page 04-23 VF_VP9.webm";
-import mapVideo from "../../../Videos/Maps transparent VF (quick time) 27-04_VP9.webm";
+import planeVideo from "../../../Videos/plane White bg - Made with Clipchamp.mp4";
+import mapVideo from "../../../Videos/maps blue BG - Made with Clipchamp.mp4";
 import "./HSecTwo.css";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
@@ -33,7 +33,7 @@ const HSecTwo = () => {
   }, []);
   return (
     <div>
-      <div id="shoe" className="relative overflow-hidden  ">
+      <div id="shoe" className="relative overflow-hidden bg-white ">
         <div className="lg:px-20 items-center grid lg:grid-cols-2 h-screen">
           {/* shoe block----- */}
           <div className="flex justify-center">
@@ -68,7 +68,7 @@ const HSecTwo = () => {
         </div>
         </div>
         {/* plane---------- */}
-        <div id="plane" className="relative h-screen flex items-center ">
+        <div id="plane" className="relative bg-white h-screen flex items-center ">
           <div className="grid lg:grid-cols-2 lg:p-20 ">
             <div className="p-5">
               <h2 className="text-3xl font-semibold my-10">
@@ -98,7 +98,7 @@ const HSecTwo = () => {
         </div>
 
         {/* wave-2----------------- */}
-    <div className="-mt-20 z-20">
+    <div className="bg-white relative overflow-hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -122,7 +122,7 @@ const HSecTwo = () => {
         <use
           xlinkHref="#clipped-wave"
           clipPath="url(#wave-clip-front)"
-          fill="#0120aa"
+          fill="#01159f"
           fillOpacity="1"
         />
       </svg>
@@ -130,7 +130,7 @@ const HSecTwo = () => {
     {/* wave end-------------------- */}
 
         {/* hand--------------------- */}
-        <div id="hand" className="relative bg-[#0120aa] overflow-hidden  flex items-end">
+        <div id="hand" className="relative bg-[#01159f] overflow-hidden  flex items-end">
        
           <div className="lg:p-20  grid lg:grid-cols-2 h-screen  ">
             <div
@@ -173,7 +173,7 @@ const HSecTwo = () => {
 
         {/* map block----- */}
 
-        <div id="map" className="relative h-screen bg-[#0120aa] flex items-center">
+        <div id="map" className="relative h-screen bg-[#01159f] flex items-center">
           <div className="lg:px-20  grid lg:grid-cols-2 text-base-100">
             <div className="p-5">
               <h2 className="lg:text-3xl text-2xl font-semibold my-10">

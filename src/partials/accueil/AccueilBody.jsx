@@ -11,7 +11,9 @@ import Header from "../Header";
 import Footer from "../../components/Footer/Footer";
 import HSecOne from "./HSection1/HSecOne";
 import HSecTwo from "./HSection2/HSecTwo";
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import homeVideo from "../../Videos/WP - Section 3 -Services 5.mp4";
 
 const AccueilBody = () => {
   // section 3------------
@@ -41,6 +43,9 @@ const AccueilBody = () => {
     });
   }, []);
 
+
+
+
   return (
     <div>
       <Header />
@@ -63,7 +68,7 @@ const AccueilBody = () => {
         </div>
 
     {/* wave-1----------------- */}
-    <div className="-mt-16">
+    <div className="-mt-16  bg-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -87,7 +92,7 @@ const AccueilBody = () => {
         <use
           xlinkHref="#clipped-wave"
           clipPath="url(#wave-clip-front)"
-          fill="#f1f5f9"
+          fill="white"
           fillOpacity="1"
         />
       </svg>
@@ -96,8 +101,8 @@ const AccueilBody = () => {
 
       </div>
      <HSecTwo/>
- {/* wave-1----------------- */}
- <div className="-mt-20 bg-[#0120aa] z-100 relative">
+ {/* wave-2----------------- */}
+ <div className="-mt-20 bg-[#01159f] z-100 relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -199,7 +204,36 @@ const AccueilBody = () => {
         </Link>
       </div>
 
+{/* wave-4----------------- */}
+<div className="-mt-20 z-100 relative">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        width="2000"  // Increase the width value here
+        height="85"
+      >
+        <defs>
+          <path
+            id="wave"
+            d="m-115,50q38-30 75,0t75,0 75,0 75,0
+    75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0 75,0
+    v20 h-1540 v-20"
+          />
+          <clipPath id="wave-clip-front">
+            <use className="wave wave-front" xlinkHref="#wave" />
+            <rect x="0" y="70" width="100%" height="100%" />
+          </clipPath>
+          <rect id="clipped-wave" x="0" y="0" width="100%" height="100%" />
+        </defs>
 
+        <use
+          xlinkHref="#clipped-wave"
+          clipPath="url(#wave-clip-front)"
+          fill="#002dbd"
+          fillOpacity="1"
+        />
+      </svg>
+    </div>
       <HSecFour />
       <Footer />
     </div>

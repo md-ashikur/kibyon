@@ -3,6 +3,9 @@ import homeVideo from "../../../Videos/WP - Section 3 -Services 5.mp4";
 import "./HSecFour.css";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Footer from "../../../components/Footer/Footer";
+import HSecTwo from "../HSection2/HSecTwo";
+import Header from "../../Header";
 
 
 const HSecFour = () => {
@@ -81,7 +84,10 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
 
   return (
     <div className="relative">
-      <div className="absolute text-justify top-0 font-semibold z-10 lg:px-20">
+        
+    
+    <div className="relative">
+    <div className="absolute text-justify top-0 font-semibold z-10 lg:px-20">
         {/* 1st part--------- */}
         <section class="container">
           <div class="content revealUp !top-[35%] lg:!w-[35%] mt-52">
@@ -169,6 +175,8 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
           </video>
         </div>
       </div>
+    </div>
+
     </div>
   );
 };
