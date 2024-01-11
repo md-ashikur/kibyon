@@ -1,0 +1,171 @@
+
+
+/* kibyon text-------------- */
+.text-animation span{
+   
+    font-weight: bold;
+    color: #0120aa;
+  
+    animation: lighting 1000ms alternate 1 ease;
+}
+@keyframes lighting{
+    0%,85%{
+        color: #0120aa;
+        
+        text-shadow:  0 4px 0 rgba(7, 7, 7, 0.4);
+    }
+    100%{
+        color: #2c71f6;
+        text-shadow: 0 0 5px #00ccff, 0 0 3px #1a85ff;
+    }
+}
+.text-animation span:nth-child(1){
+    animation-delay: 150ms;
+}
+.text-animation span:nth-child(2){
+    animation-delay: 300ms;
+}
+.text-animation span:nth-child(3){
+    animation-delay: 450ms;
+}
+.text-animation span:nth-child(4){
+    animation-delay: 600ms;
+}
+.text-animation span:nth-child(5){
+    animation-delay: 750ms;
+}
+.text-animation span:nth-child(6){
+    animation-delay: 900ms;
+   
+}
+
+/* kibyon text end------------- */
+
+
+
+.shoemodel {
+    -webkit-animation: mover 1.4s infinite  alternate;
+    animation: mover 1.4s infinite  alternate;
+
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+.texthover{
+	display: none;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+
+}
+
+.shoemodel:hover ~ .texthover{
+display: flex;
+
+}
+
+
+/* plane---------------------- */
+.planemodel {
+    -webkit-animation: mover 1.4s infinite  alternate;
+    animation: mover 1.4s infinite  alternate;
+	animation-delay: 0.6s;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+
+
+.planeText{
+	display: none;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+
+}
+
+.planemodel:hover ~ .planeText{
+display: flex;
+
+}
+
+/* hand---------------------- */
+.handmodel {
+    -webkit-animation: mover 1.4s infinite  alternate;
+    animation: mover 1.4s infinite  alternate;
+	animation-delay: 1.2s;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+
+
+.handText{
+	display: none;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+
+}
+
+.handmodel:hover ~ .handText{
+display: flex;
+
+}
+
+
+/* map------------------ */
+.mapmodel {
+    -webkit-animation: mover 1.4s infinite  alternate;
+    animation: mover 1.4s infinite  alternate ;
+	animation-delay: 1s;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+
+
+.mapText{
+	display: none;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+
+}
+
+.mapmodel:hover ~ .mapText{
+display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== */

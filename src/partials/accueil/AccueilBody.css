@@ -1,0 +1,43 @@
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.cursor1 {
+  background-color: rgb(255, 255, 255);
+  transform: scale(4);
+}
+
+.section1 {
+  min-height: 100vh;
+  cursor: none;
+}
+
+/* wave============== */
+
+svg {
+  height: 100%;
+  z-index: -1;
+}
+
+.wave {
+  transform: scale(5.2, 1);
+  -webkit-transform: scale(5.2, 1);
+  transform-origin: 0% 100%; /* this line to set the transform origin */
+  -webkit-transform-origin: 0% 100%; /*  this line for Safari */
+  animation: wave 2.5s linear infinite;
+  -webkit-animation: wave 2.5s linear infinite;
+}
+
+
+
+@keyframes wave {
+  to {
+    -webkit-transform: translate(-40%, 0%) scale(5.2, 1);
+    transform: translate(-40%, 0%) scale(5.2, 1);
+  }
+}

@@ -1,0 +1,46 @@
+.contactForm .inputBox input,
+.contactForm textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none !important; /* Remove the default outline */
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 14px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+  
+}
+
+/* Apply styles when the input is focused */
+.contactForm .inputBox input:focus,
+.contactForm .inputBox textarea:focus {
+  border-bottom: 1px solid #2c71f6; /* Example: change the bottom border color when focused */
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span, 
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+  color: #2c71f6;
+  font-size: 12px;
+  transform: translateY(-20px);
+
+}
+
+
+
+
+
+
+
