@@ -10,17 +10,18 @@ const LazyOffer = React.lazy(() => import("./pages/OfferPage/Offer"));
 const LazyContact = React.lazy(() => import("./pages/Contact/Contact"));
 const LazyAbout = React.lazy(() => import("./pages/about/About"));
 const LazyLegalPage = React.lazy(() => import("./pages/LegalPage/LegalPage"));
-const LazyPrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy/PrivacyPolicy"));
+const LazyPrivacyPolicy = React.lazy(() =>
+  import("./pages/PrivacyPolicy/PrivacyPolicy")
+);
 const LazyCredits = React.lazy(() => import("./pages/Credits/Credits"));
 
 import GoToTop from "./components/GoToTop/GoToTop";
 import NotFound from "./pages/NotFound/NotFound";
 import Loading from "./pages/Loading/Loading";
-
-
+import PrivacyPopup from "./components/PrivacyPopup/PrivacyPopUp";
+import Test from "./partials/Test";
 
 function App() {
-  
   Aos.init();
 
   const location = useLocation();
@@ -33,74 +34,75 @@ function App() {
 
   return (
     <>
-     
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <React.Suspense fallback={<Loading/>}>
-                  <LazyAccueil />
-                </React.Suspense>
-              }
-            />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyAccueil />
+            </React.Suspense>
+          }
+        />
 
-            <Route
-              path="/offres"
-              element={
-                <React.Suspense fallback={<Loading/>}>
-                  <LazyOffer />
-                </React.Suspense>
-              }
-            />
+        <Route
+          path="/offres"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyOffer />
+            </React.Suspense>
+          }
+        />
 
-            <Route
-              path="/contact"
-              element={
-                <React.Suspense fallback={<Loading/>}>
-                  <LazyContact />
-                </React.Suspense>
-              }
-            />
+        <Route
+          path="/contact"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyContact />
+            </React.Suspense>
+          }
+        />
 
-            <Route
-              path="/à-propos"
-              element={
-                <React.Suspense fallback={<Loading/>}>
-                  <LazyAbout />
-                </React.Suspense>
-              }
-            />
+        <Route
+          path="/à-propos"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyAbout />
+            </React.Suspense>
+          }
+        />
 
-            <Route
-              path="/legal"
-              element={
-                <React.Suspense fallback={<Loading/>}>
-                  <LazyLegalPage />
-                </React.Suspense>
-              }
-            />
+        <Route
+          path="/legal"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyLegalPage />
+            </React.Suspense>
+          }
+        />
 
-            <Route
-              path="/politique"
-              element={
-                <React.Suspense fallback={<Loading/>}>
-                  <LazyPrivacyPolicy />
-                </React.Suspense>
-              }
-            />
+        <Route
+          path="/politique"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyPrivacyPolicy />
+            </React.Suspense>
+          }
+        />
 
-            <Route path="/credits" element={
-            <React.Suspense fallback={<Loading/>}>
-            <LazyCredits/>
-          </React.Suspense>} />
+        <Route
+          path="/credits"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <LazyCredits />
+            </React.Suspense>
+          }
+        />
 
-            <Route path="*" element={<NotFound />} />
-          
-          </Routes>
-
-          <GoToTop />
-      
-     
+        <Route path="*" element={<NotFound />} />
+        <Route path="/test" element={<Test/>} />
+      </Routes>
+      <PrivacyPopup />
+      <GoToTop />
     </>
   );
 }
