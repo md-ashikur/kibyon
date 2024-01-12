@@ -4,7 +4,7 @@ import cookieImg from "../img/Kibyon-3-2.png";
 
 const Test = () => {
   return (
-    <div>
+    <div className="">
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-[100]">
         <div className="bg-white max-w-[500px] shadow-2xl shadow-white/50 rounded-3xl overflow-hidden mx-5">
           <div className="flex justify-center my-5 ">
