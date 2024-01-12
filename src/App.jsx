@@ -18,8 +18,10 @@ const LazyCredits = React.lazy(() => import("./pages/Credits/Credits"));
 import GoToTop from "./components/GoToTop/GoToTop";
 import NotFound from "./pages/NotFound/NotFound";
 import Loading from "./pages/Loading/Loading";
-import PrivacyPopup from "./components/PrivacyPopup/PrivacyPopUp";
+
 import Test from "./partials/Test";
+import PrivacyPopup from "./components/PrivacyPopup/PrivacyPopup";
+
 
 function App() {
   Aos.init();
@@ -101,7 +103,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/test" element={<Test/>} />
       </Routes>
-      <PrivacyPopup />
+    <PrivacyPopup/>
       <GoToTop />
     </>
   );
