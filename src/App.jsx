@@ -19,7 +19,6 @@ import GoToTop from "./components/GoToTop/GoToTop";
 import NotFound from "./pages/NotFound/NotFound";
 import Loading from "./pages/Loading/Loading";
 
-import Test from "./partials/Test";
 import PrivacyPopup from "./components/PrivacyPopup/PrivacyPopup";
 
 
@@ -101,7 +100,7 @@ function App() {
         />
 
         <Route path="*" element={<NotFound />} />
-        <Route path="/test" element={<Test/>} />
+       
       </Routes>
     <PrivacyPopup/>
       <GoToTop />

@@ -42,7 +42,7 @@ const PrivacyPopup = () => {
             </button>
           </Link>
           <button onClick={closePopup} className="bg-black text-white hover:bg-black/95  px-4 py-5 w-full">
-            Close
+           Ok
           </button>
         </div>
       </div>
