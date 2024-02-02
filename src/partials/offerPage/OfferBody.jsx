@@ -6,7 +6,7 @@ import OSecThree from "./OSection3/OSecThree";
 
 const OfferBody = () => {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <OfferPage />
       <OSecTwo />
       <OSecThree />
