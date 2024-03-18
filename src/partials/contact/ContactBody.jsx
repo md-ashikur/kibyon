@@ -107,7 +107,7 @@ const ContactBody = () => {
               <ImMobile className="text-5xl text-primary w-16 h-16 p-3 bg-base-100 rounded-full" />
               <div>
                 <h3 className="lg:text-3xl text-2xl font-bold">
-                  N° de télépohne
+                  N° de téléphone
                 </h3>
                 <p><a href="tel:0780989762">07 80 98 97 62</a></p>
               </div>
